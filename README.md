@@ -9,7 +9,7 @@
 
 ## What is REFRAG: 
 
-- For additional information about REFRAG, please take a look here: [See documentation](./dspy-refrag/refrag.md)
+- For additional information about REFRAG, please view this part of the documentation: [refrag.md](https://github.com/marcusjihansson/dspy-refrag/blob/main/refrag.md)
 
 ## Enterprise Features
 
