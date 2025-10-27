@@ -47,7 +47,7 @@ dspy-refrag/
 │   ├── serializer_*.py        # Multiple serialization options
 │   └── weaviate_retriever.py  # Production Weaviate integration
 ├── benchmarks/                # Enterprise benchmarking suite
-│   ├── benchmark_runner*.py   # 20+ model-specific benchmark runners
+│   ├── benchmark_runner*.py   # model-specific benchmark runners
 │   ├── evaluation.py          # Comprehensive evaluation metrics
 │   ├── plotting.py            # Advanced visualization tools
 │   └── utils.py               # Benchmarking utilities
@@ -60,7 +60,7 @@ dspy-refrag/
 ├── memory/                    # Memory-enhanced REFRAG extensions
 │   ├── memory_refrag/         # Conversational AI capabilities
 │   └── memory_solution_in_refrag/ # Memory storage implementations
-├── tests/                     # Comprehensive test suite (50+ tests)
+├── tests/                     # Comprehensive test suite (tests)
 ├── examples/                  # Professional examples and quickstarts
 └── docs/                      # Enterprise documentation
 ```
