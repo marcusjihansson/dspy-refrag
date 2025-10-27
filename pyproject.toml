@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dspy-refrag"
+version = "0.1.0"
+description = "Proof of concept for a DSPy.REFRAG"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    {name = "Marcus Johansson"}
+]
+dependencies = [
+    "dspy>=3.0.3",
+    "msgpack>=1.1.2",
+    "numpy>=2",
+    "pandas>=2.3.3",
+    "psycopg2-binary>=2.9.11",
+    "pyright>=1.1.406",
+    "pytest>=8.4.2",
+    "requests>=2.32.5",
+    "weaviate-client>=3.25,<4.0",
+    "matplotlib>=3.8",
+    "pypdf>=5",
+    "dotenv",
+    "anthropic>=0.71.0",
+    "openai>=2.3.0",
+    "google-cloud-aiplatform>=1.121.0",
+    "google-genai>=1.45.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.4.2",
+    "pyright>=1.1.406",
+]

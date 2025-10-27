@@ -1,0 +1,37 @@
+======================================================================
+DETAILED COMPARATIVE ANALYSIS
+======================================================================
+
+📊 ANALYSIS OVERVIEW
+Models analyzed: 23
+Analysis timestamp: 2025-10-25T04:12:20.897550
+
+📈 INDIVIDUAL MODEL PERFORMANCE
+--------------------------------------------------
+  gemini-2.5-flash-lite: +36.2% latency, 58.2% tokens
+  qwen3-235b-a22b:free: +55.3% latency
+  gpt-4.1-nano: +7.7% latency, 57.4% tokens
+  gpt-oss:120b-cloud: +30.1% latency
+  andromeda-alpha: +34.9% latency, 55.1% tokens
+  kimi-k2-instruct-0905: -3.0% latency, 55.7% tokens
+  gpt-5-mini: +22.9% latency, 49.2% tokens
+  claude-haiku-4.5: +55.5% latency, 53.4% tokens
+  gemini-2.5-pro: -0.2% latency
+  Mistral-Large-2411: +27.4% latency, 54.6% tokens
+
+📊 AGGREGATE STATISTICS
+------------------------------
+Latency Improvement :
+  Mean: 20.0%
+  Range: -56.9% to 58.2%
+  Sample size: 23
+
+Token Reduction :
+  Mean: 53.4%
+  Range: 43.1% to 68.2%
+  Sample size: 17
+
+Context Reduction :
+  Mean: 59.7%
+  Range: 59.7% to 59.7%
+  Sample size: 23

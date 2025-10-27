@@ -1,0 +1,80 @@
+============================================================
+DSPy REFRAG vs Simple RAG - Performance Summary
+============================================================
+Analysis Date: 2025-10-25T03:46:24.709460
+Models Analyzed: 23
+
+📊 OVERALL PERFORMANCE IMPROVEMENTS
+----------------------------------------
+⚡ Average Latency Improvement: 20.0%
+   Best improvement: 58.2%
+   Range: -56.9% to 58.2%
+🎯 Average Token Reduction: 53.4%
+   Range: 43.1% to 68.2%
+📝 Context Reduction: 59.7%
+
+🏆 TOP PERFORMING MODELS
+----------------------------------------
+⚡ Fastest REFRAG Models (by latency):
+   1. qwen3-235b-a22b:free: 0.23s
+   2. gemini-2.5-flash-lite: 0.91s
+   3. kimi-k2-instruct-0905: 0.95s
+   4. gpt-4.1-nano: 1.79s
+   5. gpt-oss:120b-cloud: 2.79s
+
+📈 Best Improvement Models:
+   1. gpt-oss-20b:free: 58.2% faster, 50.4% tokens
+   2. claude-haiku-4.5: 55.5% faster, 53.4% tokens
+   3. qwen3-235b-a22b:free: 55.3% faster
+   4. glm-4.6:cloud: 53.6% faster
+   5. grok-3-mini: 45.9% faster
+
+💡 KEY INSIGHTS
+----------------------------------------
+✅ 17/23 models (74%) showed latency improvements
+💰 17 models showed significant token usage reductions
+🎯 REFRAG consistently reduces context size by ~60%
+⚡ Best case improvement: 58% faster
+📊 REFRAG is generally 20% faster on average
+
+============================================================
+🔗 For detailed analysis, see comparative_analysis_results.json
+📖 For methodology, see README.md
+============================================================
+
+📊 QUALITY ANALYSIS
+----------------------------------------
+Exact Similarity: 0.0761 (avg)
+Jaccard Similarity: 0.3027 (avg)
+
+💰 COST MODELING
+----------------------------------------
+Average Cost Savings: 0.0059
+Models with Savings: 20
+
+⏰ TEMPORAL TRACKING
+----------------------------------------
+2025-10-25: 6 models
+2025-10-18: 7 models
+2025-10-17: 2 models
+2025-10-23: 4 models
+2025-10-24: 4 models
+
+📈 STATISTICAL TESTING
+----------------------------------------
+Latency T-Stat: 0.7604
+
+🏷️ MODEL CATEGORIZATION
+----------------------------------------
+google: 1 models
+qwen: 1 models
+openai: 6 models
+unknown: 4 models
+openrouter: 1 models
+moonshotai: 1 models
+anthropic: 3 models
+mistral-ai: 1 models
+xai: 1 models
+tngtech: 1 models
+x-ai: 2 models
+groq: 1 models

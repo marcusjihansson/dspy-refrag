@@ -1,0 +1,214 @@
+{
+  "analysis_timestamp": "2025-10-25T03:32:09.805890",
+  "total_models_analyzed": 23,
+  "individual_model_data": [
+    {
+      "model_name": "google/gemini-2.5-flash-lite",
+      "safe_model_name": "google_gemini-2.5-flash-lite",
+      "simple_latency": 1.4270483255386353,
+      "refrag_latency": 0.9109266400337219,
+      "simple_tokens": 1930.5,
+      "refrag_tokens": 806.5
+    },
+    {
+      "model_name": "qwen/qwen3-235b-a22b:free",
+      "safe_model_name": "qwen_qwen3-235b-a22b_free",
+      "simple_latency": 0.5254636406898499,
+      "refrag_latency": 0.23489344120025635,
+      "simple_tokens": 0.0,
+      "refrag_tokens": 0.0
+    },
+    {
+      "model_name": "openai/gpt-4.1-nano",
+      "safe_model_name": "openai_gpt-4.1-nano",
+      "simple_latency": 1.93800288438797,
+      "refrag_latency": 1.7890026569366455,
+      "simple_tokens": 1867.5,
+      "refrag_tokens": 795.75
+    },
+    {
+      "model_name": "gpt-oss:120b-cloud",
+      "safe_model_name": "gpt-oss_120b-cloud",
+      "simple_latency": 3.990111470222473,
+      "refrag_latency": 2.7896029949188232,
+      "simple_tokens": 0.0,
+      "refrag_tokens": 0.0
+    },
+    {
+      "model_name": "openrouter/andromeda-alpha",
+      "safe_model_name": "openrouter_andromeda-alpha",
+      "simple_latency": 17.266503930091858,
+      "refrag_latency": 11.241332471370697,
+      "simple_tokens": 2584.5,
+      "refrag_tokens": 1160.5
+    },
+    {
+      "model_name": "moonshotai/kimi-k2-instruct-0905",
+      "safe_model_name": "moonshotai_kimi-k2-instruct-0905",
+      "simple_latency": 0.9179171919822693,
+      "refrag_latency": 0.945448637008667,
+      "simple_tokens": 1865.0,
+      "refrag_tokens": 826.75
+    },
+    {
+      "model_name": "openai/gpt-5-mini",
+      "safe_model_name": "openai_gpt-5-mini",
+      "simple_latency": 9.74655544757843,
+      "refrag_latency": 7.517058193683624,
+      "simple_tokens": 2203.25,
+      "refrag_tokens": 1119.25
+    },
+    {
+      "model_name": "anthropic/claude-haiku-4.5",
+      "safe_model_name": "anthropic_claude-haiku-4.5",
+      "simple_latency": 6.705035388469696,
+      "refrag_latency": 2.9810510873794556,
+      "simple_tokens": 2224.75,
+      "refrag_tokens": 1036.75
+    },
+    {
+      "model_name": "gemini-2.5-pro",
+      "safe_model_name": "gemini-2.5-pro",
+      "simple_latency": 11.827541053295135,
+      "refrag_latency": 11.850143015384674,
+      "simple_tokens": 0.0,
+      "refrag_tokens": 0.0
+    },
+    {
+      "model_name": "mistral-ai/Mistral-Large-2411",
+      "safe_model_name": "mistral-ai_Mistral-Large-2411",
+      "simple_latency": 6.206460058689117,
+      "refrag_latency": 4.504072546958923,
+      "simple_tokens": 2274.0,
+      "refrag_tokens": 1032.0
+    },
+    {
+      "model_name": "anthropic/claude-sonnet-4.5",
+      "safe_model_name": "anthropic_claude-sonnet-4.5",
+      "simple_latency": 9.53811502456665,
+      "refrag_latency": 9.67715698480606,
+      "simple_tokens": 2201.0,
+      "refrag_tokens": 1050.0
+    },
+    {
+      "model_name": "xai/grok-3-mini",
+      "safe_model_name": "xai_grok-3-mini",
+      "simple_latency": 7.146471440792084,
+      "refrag_latency": 3.8654195070266724,
+      "simple_tokens": 1285.75,
+      "refrag_tokens": 0.0
+    },
+    {
+      "model_name": "openai/gpt-4o-mini",
+      "safe_model_name": "openai_gpt-4o-mini",
+      "simple_latency": 5.512155294418335,
+      "refrag_latency": 3.304763972759247,
+      "simple_tokens": 1927.0,
+      "refrag_tokens": 833.0
+    },
+    {
+      "model_name": "openai/gpt-4.1-mini",
+      "safe_model_name": "openai_gpt-4.1-mini",
+      "simple_latency": 9.349186301231384,
+      "refrag_latency": 13.141874074935913,
+      "simple_tokens": 1968.25,
+      "refrag_tokens": 850.5
+    },
+    {
+      "model_name": "glm-4.6:cloud",
+      "safe_model_name": "glm-4.6_cloud",
+      "simple_latency": 63.404376327991486,
+      "refrag_latency": 29.413305938243866,
+      "simple_tokens": 0.0,
+      "refrag_tokens": 0.0
+    },
+    {
+      "model_name": "tngtech/deepseek-r1t2-chimera:free",
+      "safe_model_name": "tngtech_deepseek-r1t2-chimera_free",
+      "simple_latency": 19.38693118095398,
+      "refrag_latency": 30.410732686519623,
+      "simple_tokens": 2427.0,
+      "refrag_tokens": 1381.0
+    },
+    {
+      "model_name": "gemini-2.5-flash",
+      "safe_model_name": "gemini-2.5-flash",
+      "simple_latency": 5.089482307434082,
+      "refrag_latency": 3.6350467205047607,
+      "simple_tokens": 0.0,
+      "refrag_tokens": 0.0
+    },
+    {
+      "model_name": "x-ai/grok-code-fast-1",
+      "safe_model_name": "x-ai_grok-code-fast-1",
+      "simple_latency": 12.837222695350647,
+      "refrag_latency": 8.788155138492584,
+      "simple_tokens": 2545.0,
+      "refrag_tokens": 1395.75
+    },
+    {
+      "model_name": "openai/gpt-5",
+      "safe_model_name": "openai_gpt-5",
+      "simple_latency": 17.44042807817459,
+      "refrag_latency": 16.255244255065918,
+      "simple_tokens": 2384.5,
+      "refrag_tokens": 1085.5
+    },
+    {
+      "model_name": "openai/gpt-oss-20b:free",
+      "safe_model_name": "openai_gpt-oss-20b_free",
+      "simple_latency": 9.139609277248383,
+      "refrag_latency": 3.8156355023384094,
+      "simple_tokens": 2263.0,
+      "refrag_tokens": 1121.5
+    },
+    {
+      "model_name": "anthropic/claude-sonnet-4",
+      "safe_model_name": "anthropic_claude-sonnet-4",
+      "simple_latency": 11.438283503055573,
+      "refrag_latency": 8.096949696540833,
+      "simple_tokens": 2282.5,
+      "refrag_tokens": 1114.0
+    },
+    {
+      "model_name": "groq/compound",
+      "safe_model_name": "groq_compound",
+      "simple_latency": 10.831991255283356,
+      "refrag_latency": 12.916257739067078,
+      "simple_tokens": 10291.5,
+      "refrag_tokens": 3277.75
+    },
+    {
+      "model_name": "x-ai/grok-4-fast",
+      "safe_model_name": "x-ai_grok-4-fast",
+      "simple_latency": 5.982776582241058,
+      "refrag_latency": 4.888049304485321,
+      "simple_tokens": 2345.25,
+      "refrag_tokens": 1280.75
+    }
+  ],
+  "statistical_summary": {
+    "latency_test": {
+      "t_statistic": 0.7604,
+      "mean1": 10.7673,
+      "mean2": 8.3901,
+      "p_value_approx": 0.1
+    },
+    "tokens_test": {
+      "t_statistic": 2.9999,
+      "mean1": 2681.4412,
+      "mean2": 1186.3088,
+      "p_value_approx": 0.05
+    },
+    "sample_sizes": {
+      "latency": {
+        "simple": 23,
+        "refrag": 23
+      },
+      "tokens": {
+        "simple": 17,
+        "refrag": 17
+      }
+    }
+  }
+}

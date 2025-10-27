@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "timestamp": "2025-10-17_17-03-27",
+    "model_name": "openai/gpt-4.1-nano",
+    "safe_model_name": "openai_gpt-4.1-nano",
+    "parameters": {
+      "k": 5,
+      "budget": 2,
+      "queries_count": 4
+    },
+    "environment": {
+      "ollama_base": "http://localhost:11434",
+      "ollama_model": "nomic-embed-text:latest",
+      "openrouter_base": "https://openrouter.ai/api/v1",
+      "github_base": "https://models.github.ai/inference",
+      "github_model": "openai/gpt-4.1-nano"
+    }
+  },
+  "benchmark_data": {
+    "similarity": {
+      "exact": 0.0,
+      "jaccard": 0.2896496941291049,
+      "len_ratio": 0.5872195031861013
+    },
+    "summary": {
+      "Simple RAG": {
+        "latency": {
+          "avg": 1.93800288438797,
+          "median": 1.9101581573486328,
+          "std": 0.31271378670631933,
+          "p95": 2.336883771419525,
+          "min": 1.5379812717437744,
+          "max": 2.39371395111084
+        },
+        "tokens": {
+          "avg": 1867.5,
+          "median": 1835.0,
+          "std": 58.0538543078752,
+          "p95": 1948.35,
+          "min": 1832.0,
+          "max": 1968.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "REFRAG": {
+        "latency": {
+          "avg": 1.7890026569366455,
+          "median": 1.8024954795837402,
+          "std": 0.49145599585457833,
+          "p95": 2.362584447860718,
+          "min": 1.138561725616455,
+          "max": 2.4124579429626465
+        },
+        "tokens": {
+          "avg": 795.75,
+          "median": 801.5,
+          "std": 13.36740438529485,
+          "p95": 806.4,
+          "min": 773.0,
+          "max": 807.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      }
+    },
+    "queries": [
+      "What is DSPy?",
+      "What problem does 'programming, not prompting' aim to solve?",
+      "List key components or modules in DSPy.",
+      "How does DSPy integrate with LLMs?"
+    ],
+    "individual_results": {
+      "simple_rag": [
+        {
+          "query": "What is DSPy?",
+          "answer": "DSPy is a declarative programming framework developed by Stanford NLP aimed at improving how large language models (LLMs) are programmed and interfaced with. Instead of relying on fragile, hand-crafted prompts, DSPy uses high-level abstractions like signatures, modules, and teleprompters to create systematic, modular, and composable pipelines for interacting with LLMs. Signatures allow developers to specify input/output behaviors in natural language or class-based formats, which can be compiled into optimized prompts. Modules enable the composition of these signatures into complex processing pipelines, facilitating tasks like reasoning and information retrieval. Overall, DSPy seeks to replace traditional prompt engineering with a more robust, scalable, and programmatic approach to harnessing LLMs effectively.",
+          "latency": 2.014846086502075,
+          "tokens": 1837,
+          "meta": {
+            "retrieved": 5,
+            "context_chars": 7503,
+            "prompt_chars": 7591,
+            "answer_chars": 820
+          }
+        },
+        {
+          "query": "What problem does 'programming, not prompting' aim to solve?",
+          "answer": "The phrase \"programming, not prompting\" aims to address the problem of fragility, brittleness, and lack of scalability associated with traditional prompt engineering techniques for interacting with language models. Specifically, it seeks to replace manually crafted, delicate prompt templates\u2014 which often require trial-and-error, are sensitive to minor changes, and do not generalize well\u2014 with a systematic, modular, and declarative programming approach. This approach, embodied by frameworks like DSPy, enables developers to define input/output behaviors abstractly (via signatures), compose modular pipelines, and optimize prompt construction more reliably and efficiently\u2014similar to traditional programming paradigms\u2014rather than relying on ad-hoc prompt tuning.",
+          "latency": 1.5379812717437744,
+          "tokens": 1833,
+          "meta": {
+            "retrieved": 5,
+            "context_chars": 7503,
+            "prompt_chars": 7638,
+            "answer_chars": 766
+          }
+        },
+        {
+          "query": "List key components or modules in DSPy.",
+          "answer": "The key components or modules in DSPy are:\n\n1. Signatures \u2013 These are declarative, natural-language typed function declarations that specify input/output behavior for text transformations or tasks, abstracting prompt construction.\n2. Modules \u2013 These replace traditional hand-crafted prompts with composable, systematic pipeline elements that handle complex interactions with LLMs, such as reasoning or retrieval.\n3. Teleprompters (Optimizers) \u2013 These compile and optimize pipelines by tuning or iteratively improving prompts to maximize a specified metric, akin to learning optimizers like SGD.\n4. dspy.Predict \u2013 The core module invoked by other modules/signatures to generate responses from LLMs based on the constructed prompts.\n",
+          "latency": 1.8054702281951904,
+          "tokens": 1832,
+          "meta": {
+            "retrieved": 5,
+            "context_chars": 7503,
+            "prompt_chars": 7617,
+            "answer_chars": 731
+          }
+        },
+        {
+          "query": "How does DSPy integrate with LLMs?",
+          "answer": "DSPy integrates with LLMs by providing a declarative and modular programming framework that replaces brittle prompt engineering with structured, reusable components. Specifically, it uses three main abstractions:\n\n1. **Signatures**: These are declarative, type-annotated representations of input/output tasks (e.g., \u201cquestion -> answer\u201d). They abstract the task description away from specific prompt wording, enabling systematic prompt generation and management. Signatures can be defined succinctly using shorthand strings or class-based declarations, promoting clarity and control.\n\n2. **Modules**: These are building blocks that implement specific transformations or reasoning patterns (e.g., chain-of-thought, reasoning, retrieval). They can be composed to form complex pipelines, replacing hand-crafted prompt sequences with systematic, reusable components.\n\n3. **Teleprompters (Optimizers)**: These optimize the entire pipeline by compiling and tuning prompts to improve performance or metrics, akin to model optimizers in ML, leveraging techniques like self-improvement or iterative refinement.\n\nInternally, DSPy translates declarative Signatures into prompts for LLMs, using modules that invoke a central `dspy.Predict` component, which handles communication with the LLM. This approach abstracts away prompt crafting, enhances modularity, and aims for scalable, adaptable interaction with LLMs, facilitating systematic pipeline development rather than ad-hoc prompt engineering.",
+          "latency": 2.39371395111084,
+          "tokens": 1968,
+          "meta": {
+            "retrieved": 5,
+            "context_chars": 7503,
+            "prompt_chars": 7612,
+            "answer_chars": 1487
+          }
+        }
+      ],
+      "refrag": [
+        {
+          "query": "What is DSPy?",
+          "answer": "DSPy is a programming framework developed by Stanford NLP designed for interacting with language models in a systematic, modular, and declarative manner. Instead of relying on fragile and handcrafted prompt templates, DSPy provides high-level abstractions\u2014such as signatures, modules, and teleprompters\u2014that enable developers to build composable pipelines for working with large language models (LLMs). Its goal is to replace traditional prompt engineering with a more robust, flexible, and scalable approach that aligns with common machine learning development practices in Python.",
+          "latency": 2.079967975616455,
+          "tokens": 800,
+          "meta": {
+            "retrieved": 5,
+            "selected": 2,
+            "context_chars": 3023,
+            "prompt_chars": 3111
+          }
+        },
+        {
+          "query": "What problem does 'programming, not prompting' aim to solve?",
+          "answer": "\"Programming, not prompting\" aims to address the fragility, brittleness, and lack of scalability associated with traditional prompt engineering techniques when interacting with language models. Specifically, it seeks to replace manually crafted, complex prompt templates\u2014 which often require trial and error and do not generalize well\u2014 with a more systematic, declarative, and modular programming approach. This approach allows for constructing flexible, reusable pipelines that are easier to develop, maintain, and adapt across different models and data domains.",
+          "latency": 2.4124579429626465,
+          "tokens": 803,
+          "meta": {
+            "retrieved": 5,
+            "selected": 2,
+            "context_chars": 3023,
+            "prompt_chars": 3158
+          }
+        },
+        {
+          "query": "List key components or modules in DSPy.",
+          "answer": "The key components or modules in DSPy are:\n\n1. Signatures \u2013 which abstract and specify the input/output behavior of a module.\n2. Modules \u2013 the core building blocks that perform specific tasks within the pipeline.\n3. Teleprompters (also referred to as optimizers) \u2013 components that assist in managing the interaction and optimization processes within the framework.",
+          "latency": 1.138561725616455,
+          "tokens": 773,
+          "meta": {
+            "retrieved": 5,
+            "selected": 2,
+            "context_chars": 3023,
+            "prompt_chars": 3137
+          }
+        },
+        {
+          "query": "How does DSPy integrate with LLMs?",
+          "answer": "DSPy integrates with LLMs by providing a declarative, systematic, and modular framework that allows developers to construct pipelines composed of high-level abstractions such as signatures, modules, and teleprompters (optimizers). Instead of relying on fragile prompt templates, DSPy enables the creation of structured, reusable components that define input/output behaviors and orchestrate interactions with language models. This approach facilitates more reliable, scalable, and maintainable workflows when working with LLMs, replacing manual prompt engineering with systematic programmatic constructs.",
+          "latency": 1.5250229835510254,
+          "tokens": 807,
+          "meta": {
+            "retrieved": 5,
+            "selected": 2,
+            "context_chars": 3023,
+            "prompt_chars": 3132
+          }
+        }
+      ]
+    }
+  }
+}

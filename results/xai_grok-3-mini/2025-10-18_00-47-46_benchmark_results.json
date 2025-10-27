@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "timestamp": "2025-10-18_00-47-46",
+    "model_name": "xai/grok-3-mini",
+    "safe_model_name": "xai_grok-3-mini",
+    "parameters": {
+      "k": 5,
+      "budget": 2,
+      "queries_count": 4
+    },
+    "environment": {
+      "ollama_base": "http://localhost:11434",
+      "ollama_model": "nomic-embed-text:latest",
+      "openrouter_base": "https://openrouter.ai/api/v1",
+      "github_base": "https://models.github.ai/inference",
+      "github_model": "xai/grok-3-mini"
+    }
+  },
+  "benchmark_data": {
+    "similarity": {
+      "exact": 0.5,
+      "jaccard": 0.5164272030651341,
+      "len_ratio": 0.5683692045556452
+    },
+    "summary": {
+      "Simple RAG": {
+        "latency": {
+          "avg": 7.146471440792084,
+          "median": 6.579054355621338,
+          "std": 3.178109429857819,
+          "p95": 11.14490864276886,
+          "min": 3.859834909439087,
+          "max": 11.567942142486572
+        },
+        "tokens": {
+          "avg": 1285.75,
+          "median": 1215.5,
+          "std": 1289.5825632738681,
+          "p95": 2669.85,
+          "min": 0.0,
+          "max": 2712.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "REFRAG": {
+        "latency": {
+          "avg": 3.8654195070266724,
+          "median": 3.8743090629577637,
+          "std": 0.03262606694686993,
+          "p95": 3.8973708152770996,
+          "min": 3.8136448860168457,
+          "max": 3.8994150161743164
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      }
+    },
+    "queries": [
+      "What is DSPy?",
+      "What problem does 'programming, not prompting' aim to solve?",
+      "List key components or modules in DSPy.",
+      "How does DSPy integrate with LLMs?"
+    ],
+    "individual_results": {
+      "simple_rag": [
+        {
+          "query": "What is DSPy?",
+          "answer": "DSPy is a framework developed by Stanford NLP for programming language models (LMs), such as large language models (LLMs), in a declarative and systematic manner. Unlike traditional prompt engineering, which relies on hand-crafted, fragile prompts, DSPy emphasizes a programmatic approach that makes interacting with LMs more modular, composable, and scalable.\n\nKey elements of DSPy include:\n- **Signatures**: Declarative specifications that define the input and output behavior of a task (e.g., \"question -> answer\"), abstracting away the need for detailed prompt construction.\n- **Modules**: Building blocks that can be composed into pipelines to handle complex tasks, such as chain-of-thought reasoning or retrieval-augmented generation (RAG). These modules use signatures to generate responses.\n- **Teleprompters (Optimizers)**: Tools that optimize the pipeline by compiling and improving prompts or fine-tuning the model, similar to how optimizers work in machine learning frameworks like PyTorch.\n\nThe framework's goal is to reduce the brittleness of prompt-based methods by allowing developers to focus on \"what\" the LM should do rather than \"how\" to prompt it, making it easier to build robust applications. DSPy is inspired by Python programming practices and aims to integrate LLMs into software development more effectively. You can explore its implementation through the provided IPython notebooks and apps on Google Colab and GitHub, as mentioned in the context.",
+          "latency": 8.747718811035156,
+          "tokens": 2431,
+          "meta": {
+            "retrieved": 5,
+            "context_chars": 7503,
+            "prompt_chars": 7591,
+            "answer_chars": 1475
+          }
+        },
+        {
+          "query": "What problem does 'programming, not prompting' aim to solve?",
+          "answer": "The phrase \"programming, not prompting\" in the context of DSPy refers to a shift from traditional prompt engineering to a more declarative and programmatic approach for interacting with large language models (LLMs). This aims to solve several key problems associated with prompt-based methods, as highlighted in the context:\n\n### Core Problem: Fragility and Inefficiency of Prompt Engineering\n- **Brittleness and Fragility**: Traditional prompting relies on hard-coded, hand-crafted prompt templates that are often lengthy, sensitive to changes, and prone to breaking when applied to different inputs, models, or domains. For instance, a well-tuned prompt might work for one scenario but fail to generalize, leading to unreliable performance.\n  \n- **Lack of Scalability**: Prompt engineering is unscalable for complex tasks or pipelines, as it involves trial-and-error hand-tuning, similar to manually adjusting classifier weights in machine learning. This makes it difficult to adapt prompts to new data domains, language models, or evolving requirements.\n\n- **Tedious and Error-Prone Development**: Crafting prompts is an artful but tedious process that requires significant expertise and iterative refinement. It often results in brittle string manipulations, which are hard to maintain, reuse, or compose into larger systems.\n\n- **Poor Modularity and Reusability**: Prompts are typically monolithic and not easily modularized, making it challenging to build composable pipelines for tasks like reasoning, retrieval-augmented generation (RAG), or chain-of-thought processes.\n\n### How DSPy's Approach Addresses This\nDSPy solves these issues by introducing a programming model with abstractions like signatures, modules, and teleprompters (optimizers). This allows developers to:\n- **Declare Intent Rather Than Specify Details**: Using signatures, users define what a module should do (e.g., \"question -> answer\") in a concise, natural-language format, rather than writing fragile prompts.\n- **Enable Systematic Optimization**: Teleprompters can automatically compile and optimize prompts or fine-tune models, making the system more adaptive and efficient, similar to how optimizers work in frameworks like PyTorch.\n- **Promote Modularity and Composition**: DSPy's modules can be built and combined into pipelines, facilitating reusable and scalable programs for complex LLM tasks.\n\nIn essence, \"programming, not prompting\" aims to make LLM development more robust, scalable, and akin to traditional software engineering, reducing reliance on the fragile art of prompt crafting and enabling more reliable, automated, and maintainable AI systems.",
+          "latency": 11.567942142486572,
+          "tokens": 2712,
+          "meta": {
+            "retrieved": 5,
+            "context_chars": 7503,
+            "prompt_chars": 7638,
+            "answer_chars": 2646
+          }
+        },
+        {
+          "query": "List key components or modules in DSPy.",
+          "answer": "Error calling LM: RequestLM failed after 3 attempts: HTTP 429: Too many requests. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).\n",
+          "latency": 4.4103899002075195,
+          "tokens": 0,
+          "meta": {
+            "retrieved": 5,
+            "context_chars": 7503,
+            "prompt_chars": 7617,
+            "answer_chars": 259
+          }
+        },
+        {
+          "query": "How does DSPy integrate with LLMs?",
+          "answer": "Error calling LM: RequestLM failed after 3 attempts: HTTP 429: Too many requests. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).\n",
+          "latency": 3.859834909439087,
+          "tokens": 0,
+          "meta": {
+            "retrieved": 5,
+            "context_chars": 7503,
+            "prompt_chars": 7612,
+            "answer_chars": 259
+          }
+        }
+      ],
+      "refrag": [
+        {
+          "query": "What is DSPy?",
+          "answer": "Error calling LM: RequestLM failed after 3 attempts: HTTP 429: Too many requests. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).\n",
+          "latency": 3.8136448860168457,
+          "tokens": 0,
+          "meta": {
+            "retrieved": 5,
+            "selected": 2,
+            "context_chars": 3023,
+            "prompt_chars": 3111
+          }
+        },
+        {
+          "query": "What problem does 'programming, not prompting' aim to solve?",
+          "answer": "Error calling LM: RequestLM failed after 3 attempts: HTTP 429: Too many requests. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).\n",
+          "latency": 3.8628311157226562,
+          "tokens": 0,
+          "meta": {
+            "retrieved": 5,
+            "selected": 2,
+            "context_chars": 3023,
+            "prompt_chars": 3158
+          }
+        },
+        {
+          "query": "List key components or modules in DSPy.",
+          "answer": "Error calling LM: RequestLM failed after 3 attempts: HTTP 429: Too many requests. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).\n",
+          "latency": 3.885787010192871,
+          "tokens": 0,
+          "meta": {
+            "retrieved": 5,
+            "selected": 2,
+            "context_chars": 3023,
+            "prompt_chars": 3137
+          }
+        },
+        {
+          "query": "How does DSPy integrate with LLMs?",
+          "answer": "Error calling LM: RequestLM failed after 3 attempts: HTTP 429: Too many requests. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).\n",
+          "latency": 3.8994150161743164,
+          "tokens": 0,
+          "meta": {
+            "retrieved": 5,
+            "selected": 2,
+            "context_chars": 3023,
+            "prompt_chars": 3132
+          }
+        }
+      ]
+    }
+  }
+}

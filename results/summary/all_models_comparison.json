@@ -1,0 +1,22 @@
+{
+  "updated": "2025-10-25T02:24:33.014556",
+  "models": [
+    {
+      "timestamp": "2025-10-25_02-24-32",
+      "model_name": "openai/gpt-5-mini",
+      "safe_model_name": "openai_gpt-5-mini",
+      "parameters": {
+        "k": 5,
+        "budget": 2,
+        "queries_count": 4
+      },
+      "environment": {
+        "ollama_base": "http://localhost:11434",
+        "ollama_model": "nomic-embed-text:latest",
+        "openrouter_base": "https://openrouter.ai/api/v1",
+        "github_base": "https://models.github.ai/inference",
+        "github_model": "mistral-ai/Mistral-Large-2411"
+      }
+    }
+  ]
+}

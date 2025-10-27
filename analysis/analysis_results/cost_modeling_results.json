@@ -1,0 +1,265 @@
+{
+  "analysis_timestamp": "2025-10-25T03:32:09.097687",
+  "pricing_model": {
+    "input_tokens_per_1000": 0.002,
+    "output_tokens_per_1000": 0.004,
+    "latency_per_second": 0.001
+  },
+  "total_models_analyzed": 23,
+  "individual_model_data": [
+    {
+      "model_name": "google/gemini-2.5-flash-lite",
+      "safe_model_name": "google_gemini-2.5-flash-lite",
+      "simple_rag_cost": 0.0072,
+      "refrag_cost": 0.0033,
+      "cost_savings": {
+        "absolute": 0.0039,
+        "percentage": 54.17
+      }
+    },
+    {
+      "model_name": "qwen/qwen3-235b-a22b:free",
+      "safe_model_name": "qwen_qwen3-235b-a22b_free",
+      "simple_rag_cost": 0.0005,
+      "refrag_cost": 0.0002,
+      "cost_savings": {
+        "absolute": 0.0003,
+        "percentage": 60.0
+      }
+    },
+    {
+      "model_name": "openai/gpt-4.1-nano",
+      "safe_model_name": "openai_gpt-4.1-nano",
+      "simple_rag_cost": 0.0075,
+      "refrag_cost": 0.0042,
+      "cost_savings": {
+        "absolute": 0.0033,
+        "percentage": 44.0
+      }
+    },
+    {
+      "model_name": "gpt-oss:120b-cloud",
+      "safe_model_name": "gpt-oss_120b-cloud",
+      "simple_rag_cost": 0.004,
+      "refrag_cost": 0.0028,
+      "cost_savings": {
+        "absolute": 0.0012,
+        "percentage": 30.0
+      }
+    },
+    {
+      "model_name": "openrouter/andromeda-alpha",
+      "safe_model_name": "openrouter_andromeda-alpha",
+      "simple_rag_cost": 0.025,
+      "refrag_cost": 0.0147,
+      "cost_savings": {
+        "absolute": 0.0103,
+        "percentage": 41.2
+      }
+    },
+    {
+      "model_name": "moonshotai/kimi-k2-instruct-0905",
+      "safe_model_name": "moonshotai_kimi-k2-instruct-0905",
+      "simple_rag_cost": 0.0065,
+      "refrag_cost": 0.0034,
+      "cost_savings": {
+        "absolute": 0.0031,
+        "percentage": 47.69
+      }
+    },
+    {
+      "model_name": "openai/gpt-5-mini",
+      "safe_model_name": "openai_gpt-5-mini",
+      "simple_rag_cost": 0.0164,
+      "refrag_cost": 0.0109,
+      "cost_savings": {
+        "absolute": 0.0055,
+        "percentage": 33.54
+      }
+    },
+    {
+      "model_name": "anthropic/claude-haiku-4.5",
+      "safe_model_name": "anthropic_claude-haiku-4.5",
+      "simple_rag_cost": 0.0134,
+      "refrag_cost": 0.0061,
+      "cost_savings": {
+        "absolute": 0.0073,
+        "percentage": 54.48
+      }
+    },
+    {
+      "model_name": "gemini-2.5-pro",
+      "safe_model_name": "gemini-2.5-pro",
+      "simple_rag_cost": 0.0118,
+      "refrag_cost": 0.0119,
+      "cost_savings": {
+        "absolute": -0.0001,
+        "percentage": -0.85
+      }
+    },
+    {
+      "model_name": "mistral-ai/Mistral-Large-2411",
+      "safe_model_name": "mistral-ai_Mistral-Large-2411",
+      "simple_rag_cost": 0.013,
+      "refrag_cost": 0.0076,
+      "cost_savings": {
+        "absolute": 0.0054,
+        "percentage": 41.54
+      }
+    },
+    {
+      "model_name": "anthropic/claude-sonnet-4.5",
+      "safe_model_name": "anthropic_claude-sonnet-4.5",
+      "simple_rag_cost": 0.0161,
+      "refrag_cost": 0.0128,
+      "cost_savings": {
+        "absolute": 0.0033,
+        "percentage": 20.5
+      }
+    },
+    {
+      "model_name": "xai/grok-3-mini",
+      "safe_model_name": "xai_grok-3-mini",
+      "simple_rag_cost": 0.011,
+      "refrag_cost": 0.0039,
+      "cost_savings": {
+        "absolute": 0.0071,
+        "percentage": 64.55
+      }
+    },
+    {
+      "model_name": "openai/gpt-4o-mini",
+      "safe_model_name": "openai_gpt-4o-mini",
+      "simple_rag_cost": 0.0113,
+      "refrag_cost": 0.0058,
+      "cost_savings": {
+        "absolute": 0.0055,
+        "percentage": 48.67
+      }
+    },
+    {
+      "model_name": "openai/gpt-4.1-mini",
+      "safe_model_name": "openai_gpt-4.1-mini",
+      "simple_rag_cost": 0.0153,
+      "refrag_cost": 0.0157,
+      "cost_savings": {
+        "absolute": -0.0004,
+        "percentage": -2.61
+      }
+    },
+    {
+      "model_name": "glm-4.6:cloud",
+      "safe_model_name": "glm-4.6_cloud",
+      "simple_rag_cost": 0.0634,
+      "refrag_cost": 0.0294,
+      "cost_savings": {
+        "absolute": 0.034,
+        "percentage": 53.63
+      }
+    },
+    {
+      "model_name": "tngtech/deepseek-r1t2-chimera:free",
+      "safe_model_name": "tngtech_deepseek-r1t2-chimera_free",
+      "simple_rag_cost": 0.0267,
+      "refrag_cost": 0.0346,
+      "cost_savings": {
+        "absolute": -0.0079,
+        "percentage": -29.59
+      }
+    },
+    {
+      "model_name": "gemini-2.5-flash",
+      "safe_model_name": "gemini-2.5-flash",
+      "simple_rag_cost": 0.0051,
+      "refrag_cost": 0.0036,
+      "cost_savings": {
+        "absolute": 0.0015,
+        "percentage": 29.41
+      }
+    },
+    {
+      "model_name": "x-ai/grok-code-fast-1",
+      "safe_model_name": "x-ai_grok-code-fast-1",
+      "simple_rag_cost": 0.0205,
+      "refrag_cost": 0.013,
+      "cost_savings": {
+        "absolute": 0.0075,
+        "percentage": 36.59
+      }
+    },
+    {
+      "model_name": "openai/gpt-5",
+      "safe_model_name": "openai_gpt-5",
+      "simple_rag_cost": 0.0246,
+      "refrag_cost": 0.0195,
+      "cost_savings": {
+        "absolute": 0.0051,
+        "percentage": 20.73
+      }
+    },
+    {
+      "model_name": "openai/gpt-oss-20b:free",
+      "safe_model_name": "openai_gpt-oss-20b_free",
+      "simple_rag_cost": 0.0159,
+      "refrag_cost": 0.0072,
+      "cost_savings": {
+        "absolute": 0.0087,
+        "percentage": 54.72
+      }
+    },
+    {
+      "model_name": "anthropic/claude-sonnet-4",
+      "safe_model_name": "anthropic_claude-sonnet-4",
+      "simple_rag_cost": 0.0183,
+      "refrag_cost": 0.0114,
+      "cost_savings": {
+        "absolute": 0.0069,
+        "percentage": 37.7
+      }
+    },
+    {
+      "model_name": "groq/compound",
+      "safe_model_name": "groq_compound",
+      "simple_rag_cost": 0.0417,
+      "refrag_cost": 0.0227,
+      "cost_savings": {
+        "absolute": 0.019,
+        "percentage": 45.56
+      }
+    },
+    {
+      "model_name": "x-ai/grok-4-fast",
+      "safe_model_name": "x-ai_grok-4-fast",
+      "simple_rag_cost": 0.013,
+      "refrag_cost": 0.0087,
+      "cost_savings": {
+        "absolute": 0.0043,
+        "percentage": 33.08
+      }
+    }
+  ],
+  "cost_summary": {
+    "simple_rag_cost_stats": {
+      "mean": 0.0169,
+      "min": 0.0005,
+      "max": 0.0634,
+      "count": 23
+    },
+    "refrag_cost_stats": {
+      "mean": 0.011,
+      "min": 0.0002,
+      "max": 0.0346,
+      "count": 23
+    },
+    "savings_stats": {
+      "mean": 0.0059,
+      "min": -0.0079,
+      "max": 0.034,
+      "count": 23
+    },
+    "insights": {
+      "average_cost_savings": 0.0059,
+      "models_with_savings": 20
+    }
+  }
+}

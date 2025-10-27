@@ -1,0 +1,193 @@
+# dspy_refrag — DSPy REFRAG Integration Package
+
+A robust DSPy module for Retrieval-Enhanced Fragmented Reasoning and Generation (REFRAG), providing vector-based retrieval, intelligent chunk selection, and seamless integration with language models. This package includes scaffolding for custom retrievers, sensors, and serializers, making it easy to extend for production use.
+
+## Features
+
+- **Vector Retrieval**: Support for Weaviate, FAISS, Pinecone, and custom retrievers with real embedders (e.g., Ollama).
+- **Intelligent Selection**: Heuristic and learned sensor policies for selecting relevant chunks.
+- **DSPy Integration**: Native support for `dspy.LM` with secure API key handling.
+- **Serialization**: Multiple serializers for fragments (JSON, Pickle, Protobuf, unified).
+- **Extensible Scaffolding**: Abstract base classes and examples for building custom components.
+- **Comprehensive Testing**: Edge-case tests, real data integration, and graceful skips for unavailable services.
+
+## Project Structure
+
+- `pyproject.toml` — Packaging metadata and dependencies.
+- `README.md` — This documentation.
+- `src/dspy_refrag/__init__.py` — Public API exports.
+- `src/dspy_refrag/refrag.py` — Main REFRAG module with DSPy LM integration.
+- `src/dspy_refrag/retriever.py` — Retriever implementations and scaffolding.
+- `src/dspy_refrag/sensor.py` — Chunk selection policies.
+- `src/dspy_refrag/fragment.py` — Fragment data structures with validation.
+- `src/dspy_refrag/serializer_*.py` — Various serialization options.
+- `src/dspy_refrag/weaviate_retriever.py` — Production-ready Weaviate retriever.
+- `tests/` — Comprehensive test suite.
+- `examples/quickstart.py` — Usage examples.
+
+## Installation
+
+Install the package in editable mode:
+
+```bash
+pip install -e .
+```
+
+For quantization features, install extras:
+
+```bash
+pip install -e '.[quant]'  # Requires scikit-learn
+```
+
+Ensure `dspy` is available: `pip install dspy>=3.0.3`.
+
+## Usage
+
+### Basic Example
+
+```python
+from dspy_refrag import REFRAGModule, SimpleRetriever
+
+# Simple retriever with no LM (returns metadata only)
+module = REFRAGModule(retriever=SimpleRetriever(), lm=None, k=3, budget=2)
+ctx = module.forward("How do I train my dog?")
+print("Query:", ctx.query)
+print("Selected chunks:", len(ctx.chunk_vectors))
+print("Answer:", ctx.answer)  # None if no LM
+```
+
+### Quickstart with Ollama embeddings (nomic-embed-text) and optional OpenRouter LM
+
+A runnable example is in `examples/quickstart.py`. It will:
+- Load PDFs from `data/`
+- Chunk and embed them using Ollama `nomic-embed-text:latest`
+- Build an in-memory retriever and run REFRAG
+- Optionally use OpenRouter for LLM answering via OpenAI-compatible env vars
+
+Requirements:
+- Ollama running locally with the model pulled:
+  - `ollama pull nomic-embed-text:latest`
+  - `ollama serve`
+- Python packages: `requests`, `numpy`, `pypdf`
+
+Run:
+```bash
+python examples/quickstart.py "your query here"
+```
+
+Optional environment variables for OpenRouter:
+- `OPENROUTER_API_KEY`
+- `OPENROUTER_MODEL` (defaults to `openrouter/auto`)
+
+The example maps these to OpenAI-compatible variables for `dspy.LM`:
+- `OPENAI_API_KEY = OPENROUTER_API_KEY`
+- `OPENAI_API_BASE = https://openrouter.ai/api/v1`
+
+### With Weaviate Retriever and Ollama Embedder
+
+```python
+from dspy_refrag import REFRAGModule
+from dspy_refrag.weaviate_retriever import WeaviateRetriever, make_ollama_embedder
+
+# Real retriever with Ollama embedder
+embedder = make_ollama_embedder(api_endpoint="http://localhost:11434")
+retriever = WeaviateRetriever(embedder=embedder, collection_name="MyDocs")
+module = REFRAGModule(retriever=retriever, k=5, budget=3)
+# Add passages first: retriever.add_passages(passages)
+ctx = module.forward("Explain quantum computing")
+```
+
+### With DSPy LM
+
+```python
+import os
+from dspy_refrag import REFRAGModule, SimpleRetriever
+
+# Set API key securely
+os.environ["OPENAI_API_KEY"] = "your-key-here"
+module = REFRAGModule(
+    retriever=SimpleRetriever(),
+    lm_model="gpt-3.5-turbo",
+    k=3,
+    budget=2
+)
+ctx = module.forward("What is machine learning?")
+print("Answer:", ctx.answer)
+```
+
+### Custom Retriever
+
+```python
+from dspy_refrag.retriever import Retriever
+import numpy as np
+
+class MyRetriever(Retriever):
+    def embed_query(self, query: str) -> np.ndarray:
+        # Your embedding logic
+        return np.random.randn(384).astype(np.float32)
+
+    def retrieve(self, query: str, k: int = 3):
+        # Your retrieval logic
+        return []
+
+module = REFRAGModule(retriever=MyRetriever())
+```
+
+Run tests: `pytest tests/`
+
+## API Reference
+
+### Core Classes
+
+- `REFRAGModule`: Main module for REFRAG workflows.
+  - `__init__(retriever, lm, sensor, k, budget, lm_model, api_key)`
+  - `forward(query)` -> `REFRAGContext`
+
+- `REFRAGContext`: Result object with query, vectors, metadata, answer.
+
+- `Retriever` (abstract): Base for custom retrievers.
+  - `embed_query(query)` -> vector
+  - `retrieve(query, k)` -> list of Passages
+
+- `Sensor`: Chunk selection policy.
+  - Modes: "heuristic", "learned"
+
+- `Fragment`: Document fragment with validation.
+
+### Retrievers
+
+- `SimpleRetriever`: Basic example with random embeddings.
+- `WeaviateRetriever`: Production retriever with Ollama integration.
+- Scaffolding for `FAISSRetriever`, `PineconeRetriever`.
+
+### Serializers
+
+- `VectorAwareSerializer`, `JSONFragmentSerializer`, etc.
+
+## Troubleshooting
+
+- **Weaviate Connection Error**: Ensure Weaviate is running (`docker run -p 8080:8080 weaviate/weaviate`).
+- **No LM Response**: Check API key in `OPENAI_API_KEY` env var.
+- **Embedding Dimension Mismatch**: Validate vector dimensions in retrievers.
+- **Tests Skipping**: Some tests skip if services (e.g., Weaviate) are unavailable.
+
+For more examples, see `examples/` and `tests/`.
+
+## Contributing
+
+This project welcomes contributions to the DSPy ecosystem. Key areas:
+
+- Extend retrievers for new vector DBs (e.g., Pinecone, Milvus).
+- Improve sensor policies with ML models.
+- Add more serializers or optimizers.
+- Enhance tests with real LLM integrations.
+
+### Guidelines
+
+1. Follow DSPy conventions for modules and signatures.
+2. Add tests for new features (use `pytest`).
+3. Update documentation and examples.
+4. Ensure secure handling of API keys and sensitive data.
+5. Submit PRs to the DSPy repo with clear descriptions.
+
+For issues or suggestions, report at https://github.com/sst/opencode/issues.

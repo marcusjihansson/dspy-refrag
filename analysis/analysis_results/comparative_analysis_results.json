@@ -1,0 +1,4849 @@
+{
+  "analysis_timestamp": "2025-10-25T04:12:20.897550",
+  "total_models_analyzed": 23,
+  "individual_model_data": [
+    {
+      "model_name": "google/gemini-2.5-flash-lite",
+      "safe_model_name": "google_gemini-2.5-flash-lite",
+      "timestamp": "2025-10-25_00-39-41",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.26611283643892336,
+        "len_ratio": 0.48302511134219195
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 1.4270483255386353,
+          "median": 1.5035340785980225,
+          "std": 0.22753913579476878,
+          "p95": 1.6350580692291259,
+          "min": 1.0512850284576416,
+          "max": 1.6498401165008545
+        },
+        "tokens": {
+          "avg": 1930.5,
+          "median": 1934.5,
+          "std": 66.58265539913529,
+          "p95": 2008.7,
+          "min": 1835.0,
+          "max": 2018.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 0.9109266400337219,
+          "median": 0.9101426601409912,
+          "std": 0.1474717382813911,
+          "p95": 1.0896173238754272,
+          "min": 0.703253984451294,
+          "max": 1.1201672554016113
+        },
+        "tokens": {
+          "avg": 806.5,
+          "median": 795.5,
+          "std": 47.92963592601137,
+          "p95": 868.5,
+          "min": 759.0,
+          "max": 876.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 36.17,
+        "latency_ratio": 0.638,
+        "token_reduction_percent": 58.22,
+        "token_ratio": 0.418,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "qwen/qwen3-235b-a22b:free",
+      "safe_model_name": "qwen_qwen3-235b-a22b_free",
+      "timestamp": "2025-10-18_03-44-53",
+      "similarity_metrics": {
+        "exact": 1.0,
+        "jaccard": 1.0,
+        "len_ratio": 1.0
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 0.5254636406898499,
+          "median": 0.5396581888198853,
+          "std": 0.2206986383037948,
+          "p95": 0.7461098909378052,
+          "min": 0.2760190963745117,
+          "max": 0.7465190887451172
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 0.23489344120025635,
+          "median": 0.21121394634246826,
+          "std": 0.04742689563533158,
+          "p95": 0.30158832073211667,
+          "min": 0.20098400115966797,
+          "max": 0.3161618709564209
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 55.3,
+        "latency_ratio": 0.447,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "openai/gpt-4.1-nano",
+      "safe_model_name": "openai_gpt-4.1-nano",
+      "timestamp": "2025-10-17_17-03-27",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.2896496941291049,
+        "len_ratio": 0.5872195031861013
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 1.93800288438797,
+          "median": 1.9101581573486328,
+          "std": 0.31271378670631933,
+          "p95": 2.336883771419525,
+          "min": 1.5379812717437744,
+          "max": 2.39371395111084
+        },
+        "tokens": {
+          "avg": 1867.5,
+          "median": 1835.0,
+          "std": 58.0538543078752,
+          "p95": 1948.35,
+          "min": 1832.0,
+          "max": 1968.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 1.7890026569366455,
+          "median": 1.8024954795837402,
+          "std": 0.49145599585457833,
+          "p95": 2.362584447860718,
+          "min": 1.138561725616455,
+          "max": 2.4124579429626465
+        },
+        "tokens": {
+          "avg": 795.75,
+          "median": 801.5,
+          "std": 13.36740438529485,
+          "p95": 806.4,
+          "min": 773.0,
+          "max": 807.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 7.69,
+        "latency_ratio": 0.923,
+        "token_reduction_percent": 57.39,
+        "token_ratio": 0.426,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "gpt-oss:120b-cloud",
+      "safe_model_name": "gpt-oss_120b-cloud",
+      "timestamp": "2025-10-18_15-15-19",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.16996724777352037,
+        "len_ratio": 0.658471488707091
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 3.990111470222473,
+          "median": 4.147880911827087,
+          "std": 0.9383329107264886,
+          "p95": 4.967876374721527,
+          "min": 2.651379108428955,
+          "max": 5.013304948806763
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 2.7896029949188232,
+          "median": 2.566244125366211,
+          "std": 0.71043877541677,
+          "p95": 3.7630556821823116,
+          "min": 2.1008808612823486,
+          "max": 3.9250428676605225
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 30.09,
+        "latency_ratio": 0.699,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "openrouter/andromeda-alpha",
+      "safe_model_name": "openrouter_andromeda-alpha",
+      "timestamp": "2025-10-23_05-31-28",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.18866290766987248,
+        "len_ratio": 0.48405930451444884
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 17.266503930091858,
+          "median": 14.998628616333008,
+          "std": 4.813083084456674,
+          "p95": 24.035946416854856,
+          "min": 13.628921270370483,
+          "max": 25.439837217330933
+        },
+        "tokens": {
+          "avg": 2584.5,
+          "median": 2436.0,
+          "std": 333.33054165497646,
+          "p95": 3052.6499999999996,
+          "min": 2316.0,
+          "max": 3150.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 11.241332471370697,
+          "median": 11.075574517250061,
+          "std": 3.605313233960289,
+          "p95": 15.500881016254425,
+          "min": 6.975344896316528,
+          "max": 15.838835954666138
+        },
+        "tokens": {
+          "avg": 1160.5,
+          "median": 1101.0,
+          "std": 164.3662069891497,
+          "p95": 1389.1499999999999,
+          "min": 1006.0,
+          "max": 1434.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 34.9,
+        "latency_ratio": 0.651,
+        "token_reduction_percent": 55.1,
+        "token_ratio": 0.449,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "moonshotai/kimi-k2-instruct-0905",
+      "safe_model_name": "moonshotai_kimi-k2-instruct-0905",
+      "timestamp": "2025-10-18_02-08-23",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.18527033878292315,
+        "len_ratio": 0.7347818525862899
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 0.9179171919822693,
+          "median": 1.0136433839797974,
+          "std": 0.25960811662231176,
+          "p95": 1.1440423369407653,
+          "min": 0.4935779571533203,
+          "max": 1.150804042816162
+        },
+        "tokens": {
+          "avg": 1865.0,
+          "median": 1878.0,
+          "std": 65.19969325081216,
+          "p95": 1933.6,
+          "min": 1762.0,
+          "max": 1942.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 0.945448637008667,
+          "median": 0.7534148693084717,
+          "std": 0.4977080898532465,
+          "p95": 1.6382246494293211,
+          "min": 0.5102767944335938,
+          "max": 1.7646880149841309
+        },
+        "tokens": {
+          "avg": 826.75,
+          "median": 829.0,
+          "std": 37.24496610281717,
+          "p95": 867.2,
+          "min": 780.0,
+          "max": 869.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": -3.0,
+        "latency_ratio": 1.03,
+        "token_reduction_percent": 55.67,
+        "token_ratio": 0.443,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "openai/gpt-5-mini",
+      "safe_model_name": "openai_gpt-5-mini",
+      "timestamp": "2025-10-25_02-24-32",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.2027030874097835,
+        "len_ratio": 0.5632525470080489
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 9.74655544757843,
+          "median": 9.66447103023529,
+          "std": 1.1621292808020618,
+          "p95": 11.214541733264923,
+          "min": 8.19663691520691,
+          "max": 11.46064281463623
+        },
+        "tokens": {
+          "avg": 2203.25,
+          "median": 2192.5,
+          "std": 98.94032292245664,
+          "p95": 2330.55,
+          "min": 2079.0,
+          "max": 2349.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 7.517058193683624,
+          "median": 7.5310879945755005,
+          "std": 1.865741427500946,
+          "p95": 9.72685774564743,
+          "min": 5.073174953460693,
+          "max": 9.932881832122803
+        },
+        "tokens": {
+          "avg": 1119.25,
+          "median": 1087.0,
+          "std": 114.23522880442793,
+          "p95": 1275.3,
+          "min": 1001.0,
+          "max": 1302.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 22.87,
+        "latency_ratio": 0.771,
+        "token_reduction_percent": 49.2,
+        "token_ratio": 0.508,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "anthropic/claude-haiku-4.5",
+      "safe_model_name": "anthropic_claude-haiku-4.5",
+      "timestamp": "2025-10-25_02-00-33",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.29265135400743364,
+        "len_ratio": 0.7417616340421898
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 6.705035388469696,
+          "median": 6.341906785964966,
+          "std": 1.4851216649212104,
+          "p95": 8.700423622131346,
+          "min": 5.130084037780762,
+          "max": 9.00624394416809
+        },
+        "tokens": {
+          "avg": 2224.75,
+          "median": 2224.5,
+          "std": 24.262883175748097,
+          "p95": 2249.7,
+          "min": 2200.0,
+          "max": 2250.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 2.9810510873794556,
+          "median": 2.739307403564453,
+          "std": 0.8422985125459261,
+          "p95": 4.100479924678802,
+          "min": 2.1908328533172607,
+          "max": 4.254756689071655
+        },
+        "tokens": {
+          "avg": 1036.75,
+          "median": 1056.5,
+          "std": 72.47197734297029,
+          "p95": 1106.45,
+          "min": 925.0,
+          "max": 1109.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 55.54,
+        "latency_ratio": 0.445,
+        "token_reduction_percent": 53.4,
+        "token_ratio": 0.466,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "gemini-2.5-pro",
+      "safe_model_name": "gemini-2.5-pro",
+      "timestamp": "2025-10-25_01-17-48",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.2777468982878892,
+        "len_ratio": 0.5426684372132276
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 11.827541053295135,
+          "median": 11.86766254901886,
+          "std": 0.7947656062476419,
+          "p95": 12.74605371952057,
+          "min": 10.749022006988525,
+          "max": 12.825817108154297
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 11.850143015384674,
+          "median": 10.973482489585876,
+          "std": 2.95691243292638,
+          "p95": 15.895711636543272,
+          "min": 8.746129035949707,
+          "max": 16.707478046417236
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": -0.19,
+        "latency_ratio": 1.002,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "mistral-ai/Mistral-Large-2411",
+      "safe_model_name": "mistral-ai_Mistral-Large-2411",
+      "timestamp": "2025-10-18_15-34-35",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.3338725090835785,
+        "len_ratio": 0.7018304857645193
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 6.206460058689117,
+          "median": 6.07165801525116,
+          "std": 0.611354146775117,
+          "p95": 6.983816397190094,
+          "min": 5.612677097320557,
+          "max": 7.069847106933594
+        },
+        "tokens": {
+          "avg": 2274.0,
+          "median": 2270.5,
+          "std": 45.205088209182826,
+          "p95": 2329.45,
+          "min": 2220.0,
+          "max": 2335.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 4.504072546958923,
+          "median": 4.352164030075073,
+          "std": 1.679659419608443,
+          "p95": 6.560882008075714,
+          "min": 2.5522401332855225,
+          "max": 6.759721994400024
+        },
+        "tokens": {
+          "avg": 1032.0,
+          "median": 1023.0,
+          "std": 93.15578350268973,
+          "p95": 1145.5,
+          "min": 926.0,
+          "max": 1156.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 27.43,
+        "latency_ratio": 0.726,
+        "token_reduction_percent": 54.62,
+        "token_ratio": 0.454,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "anthropic/claude-sonnet-4.5",
+      "safe_model_name": "anthropic_claude-sonnet-4.5",
+      "timestamp": "2025-10-23_18-03-01",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.3126439897471725,
+        "len_ratio": 0.857281652309901
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 9.53811502456665,
+          "median": 10.169620156288147,
+          "std": 1.2735290382888769,
+          "p95": 10.435863637924195,
+          "min": 7.344699859619141,
+          "max": 10.468519926071167
+        },
+        "tokens": {
+          "avg": 2201.0,
+          "median": 2192.0,
+          "std": 26.343879744638983,
+          "p95": 2237.2,
+          "min": 2175.0,
+          "max": 2245.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 9.67715698480606,
+          "median": 10.0693439245224,
+          "std": 4.020146722377605,
+          "p95": 14.28643364906311,
+          "min": 3.712857961654663,
+          "max": 14.85708212852478
+        },
+        "tokens": {
+          "avg": 1050.0,
+          "median": 1078.5,
+          "std": 72.83886325307391,
+          "p95": 1111.5,
+          "min": 927.0,
+          "max": 1116.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": -1.46,
+        "latency_ratio": 1.015,
+        "token_reduction_percent": 52.29,
+        "token_ratio": 0.477,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "xai/grok-3-mini",
+      "safe_model_name": "xai_grok-3-mini",
+      "timestamp": "2025-10-18_00-47-46",
+      "similarity_metrics": {
+        "exact": 0.5,
+        "jaccard": 0.5164272030651341,
+        "len_ratio": 0.5683692045556452
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 7.146471440792084,
+          "median": 6.579054355621338,
+          "std": 3.178109429857819,
+          "p95": 11.14490864276886,
+          "min": 3.859834909439087,
+          "max": 11.567942142486572
+        },
+        "tokens": {
+          "avg": 1285.75,
+          "median": 1215.5,
+          "std": 1289.5825632738681,
+          "p95": 2669.85,
+          "min": 0.0,
+          "max": 2712.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 3.8654195070266724,
+          "median": 3.8743090629577637,
+          "std": 0.03262606694686993,
+          "p95": 3.8973708152770996,
+          "min": 3.8136448860168457,
+          "max": 3.8994150161743164
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 45.91,
+        "latency_ratio": 0.541,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "openai/gpt-4o-mini",
+      "safe_model_name": "openai_gpt-4o-mini",
+      "timestamp": "2025-10-24_16-42-22",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.2505717216594386,
+        "len_ratio": 0.5740537513356815
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 5.512155294418335,
+          "median": 5.727984547615051,
+          "std": 1.4701414992145243,
+          "p95": 7.127463364601135,
+          "min": 3.316333055496216,
+          "max": 7.2763190269470215
+        },
+        "tokens": {
+          "avg": 1927.0,
+          "median": 1911.0,
+          "std": 69.28924880528002,
+          "p95": 2018.0,
+          "min": 1856.0,
+          "max": 2030.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 3.304763972759247,
+          "median": 2.8813494443893433,
+          "std": 0.996203783205853,
+          "p95": 4.699986171722411,
+          "min": 2.48744797706604,
+          "max": 4.968909025192261
+        },
+        "tokens": {
+          "avg": 833.0,
+          "median": 816.0,
+          "std": 40.17461885320133,
+          "p95": 889.3,
+          "min": 799.0,
+          "max": 901.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 40.05,
+        "latency_ratio": 0.6,
+        "token_reduction_percent": 56.77,
+        "token_ratio": 0.432,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "openai/gpt-4.1-mini",
+      "safe_model_name": "openai_gpt-4.1-mini",
+      "timestamp": "2025-10-25_02-22-48",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.25726607251634237,
+        "len_ratio": 0.6027065789155358
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 9.349186301231384,
+          "median": 6.484366416931152,
+          "std": 6.923277260787228,
+          "p95": 19.047901177406306,
+          "min": 3.445643186569214,
+          "max": 20.98236918449402
+        },
+        "tokens": {
+          "avg": 1968.25,
+          "median": 1962.5,
+          "std": 76.01767886485354,
+          "p95": 2064.2,
+          "min": 1867.0,
+          "max": 2081.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 13.141874074935913,
+          "median": 5.054939150810242,
+          "std": 15.058591418474343,
+          "p95": 34.13926235437392,
+          "min": 3.270689010620117,
+          "max": 39.18692898750305
+        },
+        "tokens": {
+          "avg": 850.5,
+          "median": 872.5,
+          "std": 40.7829621288106,
+          "p95": 876.7,
+          "min": 780.0,
+          "max": 877.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": -40.57,
+        "latency_ratio": 1.406,
+        "token_reduction_percent": 56.79,
+        "token_ratio": 0.432,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "glm-4.6:cloud",
+      "safe_model_name": "glm-4.6_cloud",
+      "timestamp": "2025-10-18_14-38-18",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.2552358280769225,
+        "len_ratio": 0.5706670991331187
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 63.404376327991486,
+          "median": 54.83323848247528,
+          "std": 33.612677359754926,
+          "p95": 108.51099836826322,
+          "min": 26.012145042419434,
+          "max": 117.93888330459595
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 29.413305938243866,
+          "median": 27.630505919456482,
+          "std": 5.721637875328552,
+          "p95": 37.202657020092005,
+          "min": 23.9581298828125,
+          "max": 38.43408203125
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 53.61,
+        "latency_ratio": 0.464,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "tngtech/deepseek-r1t2-chimera:free",
+      "safe_model_name": "tngtech_deepseek-r1t2-chimera_free",
+      "timestamp": "2025-10-24_17-38-00",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.2610227979269768,
+        "len_ratio": 0.8448703706539551
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 19.38693118095398,
+          "median": 18.597424387931824,
+          "std": 6.166760390302908,
+          "p95": 27.327453494071957,
+          "min": 11.963597059249878,
+          "max": 28.389278888702393
+        },
+        "tokens": {
+          "avg": 2427.0,
+          "median": 2428.5,
+          "std": 163.0628713104243,
+          "p95": 2617.95,
+          "min": 2217.0,
+          "max": 2634.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 30.410732686519623,
+          "median": 23.409937381744385,
+          "std": 16.80714207553105,
+          "p95": 53.93703820705413,
+          "min": 16.35693097114563,
+          "max": 58.46612501144409
+        },
+        "tokens": {
+          "avg": 1381.0,
+          "median": 1396.5,
+          "std": 161.11331416118284,
+          "p95": 1563.1,
+          "min": 1152.0,
+          "max": 1579.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": -56.86,
+        "latency_ratio": 1.569,
+        "token_reduction_percent": 43.1,
+        "token_ratio": 0.569,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "gemini-2.5-flash",
+      "safe_model_name": "gemini-2.5-flash",
+      "timestamp": "2025-10-25_00-53-54",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.32889410346934617,
+        "len_ratio": 0.5175947844697831
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 5.089482307434082,
+          "median": 5.072578430175781,
+          "std": 0.8638926288408909,
+          "p95": 6.130450510978698,
+          "min": 3.9783191680908203,
+          "max": 6.234453201293945
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 3.6350467205047607,
+          "median": 3.8393555879592896,
+          "std": 1.4225802421699587,
+          "p95": 5.200119340419769,
+          "min": 1.4439218044281006,
+          "max": 5.417553901672363
+        },
+        "tokens": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 28.58,
+        "latency_ratio": 0.714,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "x-ai/grok-code-fast-1",
+      "safe_model_name": "x-ai_grok-code-fast-1",
+      "timestamp": "2025-10-24_04-41-11",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.2635826404789253,
+        "len_ratio": 0.7075307930278496
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 12.837222695350647,
+          "median": 11.432091474533081,
+          "std": 4.776125282744019,
+          "p95": 19.346080338954923,
+          "min": 8.08334493637085,
+          "max": 20.401362895965576
+        },
+        "tokens": {
+          "avg": 2545.0,
+          "median": 2515.5,
+          "std": 162.2975662171186,
+          "p95": 2758.75,
+          "min": 2349.0,
+          "max": 2800.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 8.788155138492584,
+          "median": 9.032070398330688,
+          "std": 1.8555103376382298,
+          "p95": 10.861974370479583,
+          "min": 5.9718499183654785,
+          "max": 11.116629838943481
+        },
+        "tokens": {
+          "avg": 1395.75,
+          "median": 1321.5,
+          "std": 180.73098101875064,
+          "p95": 1646.3,
+          "min": 1237.0,
+          "max": 1703.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 31.54,
+        "latency_ratio": 0.685,
+        "token_reduction_percent": 45.16,
+        "token_ratio": 0.548,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "openai/gpt-5",
+      "safe_model_name": "openai_gpt-5",
+      "timestamp": "2025-10-24_16-55-06",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.17158557625948928,
+        "len_ratio": 0.4323090170161193
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 17.44042807817459,
+          "median": 15.015157222747803,
+          "std": 6.911160032292287,
+          "p95": 26.988647246360774,
+          "min": 10.73162293434143,
+          "max": 28.999774932861328
+        },
+        "tokens": {
+          "avg": 2384.5,
+          "median": 2284.5,
+          "std": 247.12800326956068,
+          "p95": 2729.25,
+          "min": 2176.0,
+          "max": 2793.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 16.255244255065918,
+          "median": 11.568032026290894,
+          "std": 10.889214982258927,
+          "p95": 31.53171596527099,
+          "min": 7.302023887634277,
+          "max": 34.58288908004761
+        },
+        "tokens": {
+          "avg": 1085.5,
+          "median": 1053.0,
+          "std": 109.58216095697328,
+          "p95": 1234.45,
+          "min": 978.0,
+          "max": 1258.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 6.8,
+        "latency_ratio": 0.932,
+        "token_reduction_percent": 54.48,
+        "token_ratio": 0.455,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "openai/gpt-oss-20b:free",
+      "safe_model_name": "openai_gpt-oss-20b_free",
+      "timestamp": "2025-10-17_03-39-08",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.15571528306722174,
+        "len_ratio": 0.5583398628730196
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 9.139609277248383,
+          "median": 7.438438534736633,
+          "std": 4.647961474235829,
+          "p95": 15.607411873340604,
+          "min": 4.855339050292969,
+          "max": 16.826220989227295
+        },
+        "tokens": {
+          "avg": 2263.0,
+          "median": 2243.0,
+          "std": 138.83083231040575,
+          "p95": 2441.9,
+          "min": 2101.0,
+          "max": 2465.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 3.8156355023384094,
+          "median": 3.675276517868042,
+          "std": 1.2245907609961586,
+          "p95": 5.3389408826828,
+          "min": 2.414153814315796,
+          "max": 5.497835159301758
+        },
+        "tokens": {
+          "avg": 1121.5,
+          "median": 1053.5,
+          "std": 181.1028713190379,
+          "p95": 1373.75,
+          "min": 958.0,
+          "max": 1421.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 58.25,
+        "latency_ratio": 0.417,
+        "token_reduction_percent": 50.44,
+        "token_ratio": 0.496,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "anthropic/claude-sonnet-4",
+      "safe_model_name": "anthropic_claude-sonnet-4",
+      "timestamp": "2025-10-23_17-17-32",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.32285427106142317,
+        "len_ratio": 0.8596566961838823
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 11.438283503055573,
+          "median": 11.838938355445862,
+          "std": 1.7168329023601867,
+          "p95": 13.110742545127868,
+          "min": 8.926650047302246,
+          "max": 13.14860725402832
+        },
+        "tokens": {
+          "avg": 2282.5,
+          "median": 2273.0,
+          "std": 38.61023180453596,
+          "p95": 2333.8,
+          "min": 2243.0,
+          "max": 2341.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 8.096949696540833,
+          "median": 8.527861952781677,
+          "std": 1.2077598485904417,
+          "p95": 9.161285626888274,
+          "min": 6.072160959243774,
+          "max": 9.259913921356201
+        },
+        "tokens": {
+          "avg": 1114.0,
+          "median": 1140.0,
+          "std": 68.77863040218233,
+          "p95": 1172.75,
+          "min": 998.0,
+          "max": 1178.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 29.21,
+        "latency_ratio": 0.708,
+        "token_reduction_percent": 51.19,
+        "token_ratio": 0.488,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "groq/compound",
+      "safe_model_name": "groq_compound",
+      "timestamp": "2025-10-18_03-38-43",
+      "similarity_metrics": {
+        "exact": 0.25,
+        "jaccard": 0.38724872118019105,
+        "len_ratio": 0.5672537696002238
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 10.831991255283356,
+          "median": 9.28184962272644,
+          "std": 5.256360609582296,
+          "p95": 18.03018921613693,
+          "min": 5.313591003417969,
+          "max": 19.450674772262573
+        },
+        "tokens": {
+          "avg": 10291.5,
+          "median": 11055.0,
+          "std": 6838.079317322957,
+          "p95": 18043.8,
+          "min": 0.0,
+          "max": 19056.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 12.916257739067078,
+          "median": 14.08181607723236,
+          "std": 6.964944764267755,
+          "p95": 20.394248044490812,
+          "min": 2.043941020965576,
+          "max": 21.457457780838013
+        },
+        "tokens": {
+          "avg": 3277.75,
+          "median": 4283.0,
+          "std": 1898.5152586955944,
+          "p95": 4528.65,
+          "min": 0.0,
+          "max": 4545.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": -19.24,
+        "latency_ratio": 1.192,
+        "token_reduction_percent": 68.15,
+        "token_ratio": 0.318,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    },
+    {
+      "model_name": "x-ai/grok-4-fast",
+      "safe_model_name": "x-ai_grok-4-fast",
+      "timestamp": "2025-10-23_18-15-42",
+      "similarity_metrics": {
+        "exact": 0.0,
+        "jaccard": 0.2718786620287845,
+        "len_ratio": 0.49804115937458987
+      },
+      "simple_rag": {
+        "latency": {
+          "avg": 5.982776582241058,
+          "median": 5.994272947311401,
+          "std": 1.6157657310965083,
+          "p95": 7.928291177749633,
+          "min": 3.796910047531128,
+          "max": 8.145650386810303
+        },
+        "tokens": {
+          "avg": 2345.25,
+          "median": 2413.0,
+          "std": 131.79790400457816,
+          "p95": 2435.05,
+          "min": 2118.0,
+          "max": 2437.0
+        },
+        "context_chars": {
+          "avg": 7503.0,
+          "median": 7503.0,
+          "std": 0.0,
+          "p95": 7503.0,
+          "min": 7503.0,
+          "max": 7503.0
+        },
+        "prompt_chars": {
+          "avg": 7614.5,
+          "median": 7614.5,
+          "std": 16.710774967068403,
+          "p95": 7634.85,
+          "min": 7591.0,
+          "max": 7638.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "refrag": {
+        "latency": {
+          "avg": 4.888049304485321,
+          "median": 5.0835360288619995,
+          "std": 2.368975498068659,
+          "p95": 7.418859159946441,
+          "min": 1.86844801902771,
+          "max": 7.516677141189575
+        },
+        "tokens": {
+          "avg": 1280.75,
+          "median": 1228.0,
+          "std": 198.79181949969671,
+          "p95": 1551.1,
+          "min": 1064.0,
+          "max": 1603.0
+        },
+        "context_chars": {
+          "avg": 3023.0,
+          "median": 3023.0,
+          "std": 0.0,
+          "p95": 3023.0,
+          "min": 3023.0,
+          "max": 3023.0
+        },
+        "prompt_chars": {
+          "avg": 3134.5,
+          "median": 3134.5,
+          "std": 16.710774967068403,
+          "p95": 3154.85,
+          "min": 3111.0,
+          "max": 3158.0
+        },
+        "retrieved": {
+          "avg": 5.0,
+          "median": 5.0,
+          "std": 0.0,
+          "p95": 5.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "selected": {
+          "avg": 2.0,
+          "median": 2.0,
+          "std": 0.0,
+          "p95": 2.0,
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "performance_comparison": {
+        "latency_improvement_percent": 18.3,
+        "latency_ratio": 0.817,
+        "token_reduction_percent": 45.39,
+        "token_ratio": 0.546,
+        "context_reduction_percent": 59.71,
+        "selection_efficiency_percent": 40.0
+      }
+    }
+  ],
+  "comparative_metrics": {
+    "aggregate_improvements": {
+      "latency_improvement_stats": {
+        "mean": 20.04,
+        "min": -56.86,
+        "max": 58.25,
+        "count": 23
+      },
+      "token_reduction_stats": {
+        "mean": 53.37,
+        "min": 43.1,
+        "max": 68.15,
+        "count": 17
+      },
+      "context_reduction_stats": {
+        "mean": 59.71,
+        "min": 59.71,
+        "max": 59.71,
+        "count": 23
+      }
+    },
+    "model_rankings": {
+      "fastest_refrag_models": [
+        {
+          "model": "qwen/qwen3-235b-a22b:free",
+          "avg_latency": 0.23489344120025635,
+          "rank": 1
+        },
+        {
+          "model": "google/gemini-2.5-flash-lite",
+          "avg_latency": 0.9109266400337219,
+          "rank": 2
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "avg_latency": 0.945448637008667,
+          "rank": 3
+        },
+        {
+          "model": "openai/gpt-4.1-nano",
+          "avg_latency": 1.7890026569366455,
+          "rank": 4
+        },
+        {
+          "model": "gpt-oss:120b-cloud",
+          "avg_latency": 2.7896029949188232,
+          "rank": 5
+        },
+        {
+          "model": "anthropic/claude-haiku-4.5",
+          "avg_latency": 2.9810510873794556,
+          "rank": 6
+        },
+        {
+          "model": "openai/gpt-4o-mini",
+          "avg_latency": 3.304763972759247,
+          "rank": 7
+        },
+        {
+          "model": "gemini-2.5-flash",
+          "avg_latency": 3.6350467205047607,
+          "rank": 8
+        },
+        {
+          "model": "openai/gpt-oss-20b:free",
+          "avg_latency": 3.8156355023384094,
+          "rank": 9
+        },
+        {
+          "model": "xai/grok-3-mini",
+          "avg_latency": 3.8654195070266724,
+          "rank": 10
+        }
+      ],
+      "fastest_simple_rag_models": [
+        {
+          "model": "qwen/qwen3-235b-a22b:free",
+          "avg_latency": 0.5254636406898499,
+          "rank": 1
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "avg_latency": 0.9179171919822693,
+          "rank": 2
+        },
+        {
+          "model": "google/gemini-2.5-flash-lite",
+          "avg_latency": 1.4270483255386353,
+          "rank": 3
+        },
+        {
+          "model": "openai/gpt-4.1-nano",
+          "avg_latency": 1.93800288438797,
+          "rank": 4
+        },
+        {
+          "model": "gpt-oss:120b-cloud",
+          "avg_latency": 3.990111470222473,
+          "rank": 5
+        },
+        {
+          "model": "gemini-2.5-flash",
+          "avg_latency": 5.089482307434082,
+          "rank": 6
+        },
+        {
+          "model": "openai/gpt-4o-mini",
+          "avg_latency": 5.512155294418335,
+          "rank": 7
+        },
+        {
+          "model": "x-ai/grok-4-fast",
+          "avg_latency": 5.982776582241058,
+          "rank": 8
+        },
+        {
+          "model": "mistral-ai/Mistral-Large-2411",
+          "avg_latency": 6.206460058689117,
+          "rank": 9
+        },
+        {
+          "model": "anthropic/claude-haiku-4.5",
+          "avg_latency": 6.705035388469696,
+          "rank": 10
+        }
+      ],
+      "best_improvement_models": [
+        {
+          "model": "openai/gpt-oss-20b:free",
+          "latency_improvement": 58.25,
+          "token_reduction": 50.44
+        },
+        {
+          "model": "anthropic/claude-haiku-4.5",
+          "latency_improvement": 55.54,
+          "token_reduction": 53.4
+        },
+        {
+          "model": "qwen/qwen3-235b-a22b:free",
+          "latency_improvement": 55.3,
+          "token_reduction": null
+        },
+        {
+          "model": "glm-4.6:cloud",
+          "latency_improvement": 53.61,
+          "token_reduction": null
+        },
+        {
+          "model": "xai/grok-3-mini",
+          "latency_improvement": 45.91,
+          "token_reduction": null
+        },
+        {
+          "model": "openai/gpt-4o-mini",
+          "latency_improvement": 40.05,
+          "token_reduction": 56.77
+        },
+        {
+          "model": "google/gemini-2.5-flash-lite",
+          "latency_improvement": 36.17,
+          "token_reduction": 58.22
+        },
+        {
+          "model": "openrouter/andromeda-alpha",
+          "latency_improvement": 34.9,
+          "token_reduction": 55.1
+        },
+        {
+          "model": "x-ai/grok-code-fast-1",
+          "latency_improvement": 31.54,
+          "token_reduction": 45.16
+        },
+        {
+          "model": "gpt-oss:120b-cloud",
+          "latency_improvement": 30.09,
+          "token_reduction": null
+        }
+      ]
+    },
+    "summary_insights": {
+      "total_models_with_complete_data": 23,
+      "models_with_positive_latency_improvement": 17,
+      "models_with_positive_token_reduction": 17,
+      "average_refrag_vs_simple_rag_improvement": {
+        "mean": 20.04,
+        "min": -56.86,
+        "max": 58.25,
+        "count": 23
+      }
+    }
+  },
+  "integrated_analyses": {
+    "quality_analysis": {
+      "analysis_timestamp": "2025-10-25T03:32:09.006344",
+      "total_models_analyzed": 23,
+      "individual_model_data": [
+        {
+          "model_name": "google/gemini-2.5-flash-lite",
+          "safe_model_name": "google_gemini-2.5-flash-lite",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.26611283643892336,
+            "len_ratio": 0.48302511134219195
+          }
+        },
+        {
+          "model_name": "qwen/qwen3-235b-a22b:free",
+          "safe_model_name": "qwen_qwen3-235b-a22b_free",
+          "similarity_metrics": {
+            "exact": 1.0,
+            "jaccard": 1.0,
+            "len_ratio": 1.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-4.1-nano",
+          "safe_model_name": "openai_gpt-4.1-nano",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.2896496941291049,
+            "len_ratio": 0.5872195031861013
+          }
+        },
+        {
+          "model_name": "gpt-oss:120b-cloud",
+          "safe_model_name": "gpt-oss_120b-cloud",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.16996724777352037,
+            "len_ratio": 0.658471488707091
+          }
+        },
+        {
+          "model_name": "openrouter/andromeda-alpha",
+          "safe_model_name": "openrouter_andromeda-alpha",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.18866290766987248,
+            "len_ratio": 0.48405930451444884
+          }
+        },
+        {
+          "model_name": "moonshotai/kimi-k2-instruct-0905",
+          "safe_model_name": "moonshotai_kimi-k2-instruct-0905",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.18527033878292315,
+            "len_ratio": 0.7347818525862899
+          }
+        },
+        {
+          "model_name": "openai/gpt-5-mini",
+          "safe_model_name": "openai_gpt-5-mini",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.2027030874097835,
+            "len_ratio": 0.5632525470080489
+          }
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5",
+          "safe_model_name": "anthropic_claude-haiku-4.5",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.29265135400743364,
+            "len_ratio": 0.7417616340421898
+          }
+        },
+        {
+          "model_name": "gemini-2.5-pro",
+          "safe_model_name": "gemini-2.5-pro",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.2777468982878892,
+            "len_ratio": 0.5426684372132276
+          }
+        },
+        {
+          "model_name": "mistral-ai/Mistral-Large-2411",
+          "safe_model_name": "mistral-ai_Mistral-Large-2411",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.3338725090835785,
+            "len_ratio": 0.7018304857645193
+          }
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5",
+          "safe_model_name": "anthropic_claude-sonnet-4.5",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.3126439897471725,
+            "len_ratio": 0.857281652309901
+          }
+        },
+        {
+          "model_name": "xai/grok-3-mini",
+          "safe_model_name": "xai_grok-3-mini",
+          "similarity_metrics": {
+            "exact": 0.5,
+            "jaccard": 0.5164272030651341,
+            "len_ratio": 0.5683692045556452
+          }
+        },
+        {
+          "model_name": "openai/gpt-4o-mini",
+          "safe_model_name": "openai_gpt-4o-mini",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.2505717216594386,
+            "len_ratio": 0.5740537513356815
+          }
+        },
+        {
+          "model_name": "openai/gpt-4.1-mini",
+          "safe_model_name": "openai_gpt-4.1-mini",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.25726607251634237,
+            "len_ratio": 0.6027065789155358
+          }
+        },
+        {
+          "model_name": "glm-4.6:cloud",
+          "safe_model_name": "glm-4.6_cloud",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.2552358280769225,
+            "len_ratio": 0.5706670991331187
+          }
+        },
+        {
+          "model_name": "tngtech/deepseek-r1t2-chimera:free",
+          "safe_model_name": "tngtech_deepseek-r1t2-chimera_free",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.2610227979269768,
+            "len_ratio": 0.8448703706539551
+          }
+        },
+        {
+          "model_name": "gemini-2.5-flash",
+          "safe_model_name": "gemini-2.5-flash",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.32889410346934617,
+            "len_ratio": 0.5175947844697831
+          }
+        },
+        {
+          "model_name": "x-ai/grok-code-fast-1",
+          "safe_model_name": "x-ai_grok-code-fast-1",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.2635826404789253,
+            "len_ratio": 0.7075307930278496
+          }
+        },
+        {
+          "model_name": "openai/gpt-5",
+          "safe_model_name": "openai_gpt-5",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.17158557625948928,
+            "len_ratio": 0.4323090170161193
+          }
+        },
+        {
+          "model_name": "openai/gpt-oss-20b:free",
+          "safe_model_name": "openai_gpt-oss-20b_free",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.15571528306722174,
+            "len_ratio": 0.5583398628730196
+          }
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4",
+          "safe_model_name": "anthropic_claude-sonnet-4",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.32285427106142317,
+            "len_ratio": 0.8596566961838823
+          }
+        },
+        {
+          "model_name": "groq/compound",
+          "safe_model_name": "groq_compound",
+          "similarity_metrics": {
+            "exact": 0.25,
+            "jaccard": 0.38724872118019105,
+            "len_ratio": 0.5672537696002238
+          }
+        },
+        {
+          "model_name": "x-ai/grok-4-fast",
+          "safe_model_name": "x-ai_grok-4-fast",
+          "similarity_metrics": {
+            "exact": 0.0,
+            "jaccard": 0.2718786620287845,
+            "len_ratio": 0.49804115937458987
+          }
+        }
+      ],
+      "quality_summary": {
+        "exact_similarity_stats": {
+          "mean": 0.0761,
+          "min": 0.0,
+          "max": 1.0,
+          "count": 23
+        },
+        "jaccard_similarity_stats": {
+          "mean": 0.3027,
+          "min": 0.15571528306722174,
+          "max": 1.0,
+          "count": 23
+        },
+        "len_ratio_similarity_stats": {
+          "mean": 0.6372,
+          "min": 0.4323090170161193,
+          "max": 1.0,
+          "count": 23
+        },
+        "insights": {
+          "average_exact_similarity": 0.0761,
+          "average_jaccard_similarity": 0.3027,
+          "average_len_ratio_similarity": 0.6372
+        }
+      }
+    },
+    "cost_modeling": {
+      "analysis_timestamp": "2025-10-25T03:32:09.097687",
+      "pricing_model": {
+        "input_tokens_per_1000": 0.002,
+        "output_tokens_per_1000": 0.004,
+        "latency_per_second": 0.001
+      },
+      "total_models_analyzed": 23,
+      "individual_model_data": [
+        {
+          "model_name": "google/gemini-2.5-flash-lite",
+          "safe_model_name": "google_gemini-2.5-flash-lite",
+          "simple_rag_cost": 0.0072,
+          "refrag_cost": 0.0033,
+          "cost_savings": {
+            "absolute": 0.0039,
+            "percentage": 54.17
+          }
+        },
+        {
+          "model_name": "qwen/qwen3-235b-a22b:free",
+          "safe_model_name": "qwen_qwen3-235b-a22b_free",
+          "simple_rag_cost": 0.0005,
+          "refrag_cost": 0.0002,
+          "cost_savings": {
+            "absolute": 0.0003,
+            "percentage": 60.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-4.1-nano",
+          "safe_model_name": "openai_gpt-4.1-nano",
+          "simple_rag_cost": 0.0075,
+          "refrag_cost": 0.0042,
+          "cost_savings": {
+            "absolute": 0.0033,
+            "percentage": 44.0
+          }
+        },
+        {
+          "model_name": "gpt-oss:120b-cloud",
+          "safe_model_name": "gpt-oss_120b-cloud",
+          "simple_rag_cost": 0.004,
+          "refrag_cost": 0.0028,
+          "cost_savings": {
+            "absolute": 0.0012,
+            "percentage": 30.0
+          }
+        },
+        {
+          "model_name": "openrouter/andromeda-alpha",
+          "safe_model_name": "openrouter_andromeda-alpha",
+          "simple_rag_cost": 0.025,
+          "refrag_cost": 0.0147,
+          "cost_savings": {
+            "absolute": 0.0103,
+            "percentage": 41.2
+          }
+        },
+        {
+          "model_name": "moonshotai/kimi-k2-instruct-0905",
+          "safe_model_name": "moonshotai_kimi-k2-instruct-0905",
+          "simple_rag_cost": 0.0065,
+          "refrag_cost": 0.0034,
+          "cost_savings": {
+            "absolute": 0.0031,
+            "percentage": 47.69
+          }
+        },
+        {
+          "model_name": "openai/gpt-5-mini",
+          "safe_model_name": "openai_gpt-5-mini",
+          "simple_rag_cost": 0.0164,
+          "refrag_cost": 0.0109,
+          "cost_savings": {
+            "absolute": 0.0055,
+            "percentage": 33.54
+          }
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5",
+          "safe_model_name": "anthropic_claude-haiku-4.5",
+          "simple_rag_cost": 0.0134,
+          "refrag_cost": 0.0061,
+          "cost_savings": {
+            "absolute": 0.0073,
+            "percentage": 54.48
+          }
+        },
+        {
+          "model_name": "gemini-2.5-pro",
+          "safe_model_name": "gemini-2.5-pro",
+          "simple_rag_cost": 0.0118,
+          "refrag_cost": 0.0119,
+          "cost_savings": {
+            "absolute": -0.0001,
+            "percentage": -0.85
+          }
+        },
+        {
+          "model_name": "mistral-ai/Mistral-Large-2411",
+          "safe_model_name": "mistral-ai_Mistral-Large-2411",
+          "simple_rag_cost": 0.013,
+          "refrag_cost": 0.0076,
+          "cost_savings": {
+            "absolute": 0.0054,
+            "percentage": 41.54
+          }
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5",
+          "safe_model_name": "anthropic_claude-sonnet-4.5",
+          "simple_rag_cost": 0.0161,
+          "refrag_cost": 0.0128,
+          "cost_savings": {
+            "absolute": 0.0033,
+            "percentage": 20.5
+          }
+        },
+        {
+          "model_name": "xai/grok-3-mini",
+          "safe_model_name": "xai_grok-3-mini",
+          "simple_rag_cost": 0.011,
+          "refrag_cost": 0.0039,
+          "cost_savings": {
+            "absolute": 0.0071,
+            "percentage": 64.55
+          }
+        },
+        {
+          "model_name": "openai/gpt-4o-mini",
+          "safe_model_name": "openai_gpt-4o-mini",
+          "simple_rag_cost": 0.0113,
+          "refrag_cost": 0.0058,
+          "cost_savings": {
+            "absolute": 0.0055,
+            "percentage": 48.67
+          }
+        },
+        {
+          "model_name": "openai/gpt-4.1-mini",
+          "safe_model_name": "openai_gpt-4.1-mini",
+          "simple_rag_cost": 0.0153,
+          "refrag_cost": 0.0157,
+          "cost_savings": {
+            "absolute": -0.0004,
+            "percentage": -2.61
+          }
+        },
+        {
+          "model_name": "glm-4.6:cloud",
+          "safe_model_name": "glm-4.6_cloud",
+          "simple_rag_cost": 0.0634,
+          "refrag_cost": 0.0294,
+          "cost_savings": {
+            "absolute": 0.034,
+            "percentage": 53.63
+          }
+        },
+        {
+          "model_name": "tngtech/deepseek-r1t2-chimera:free",
+          "safe_model_name": "tngtech_deepseek-r1t2-chimera_free",
+          "simple_rag_cost": 0.0267,
+          "refrag_cost": 0.0346,
+          "cost_savings": {
+            "absolute": -0.0079,
+            "percentage": -29.59
+          }
+        },
+        {
+          "model_name": "gemini-2.5-flash",
+          "safe_model_name": "gemini-2.5-flash",
+          "simple_rag_cost": 0.0051,
+          "refrag_cost": 0.0036,
+          "cost_savings": {
+            "absolute": 0.0015,
+            "percentage": 29.41
+          }
+        },
+        {
+          "model_name": "x-ai/grok-code-fast-1",
+          "safe_model_name": "x-ai_grok-code-fast-1",
+          "simple_rag_cost": 0.0205,
+          "refrag_cost": 0.013,
+          "cost_savings": {
+            "absolute": 0.0075,
+            "percentage": 36.59
+          }
+        },
+        {
+          "model_name": "openai/gpt-5",
+          "safe_model_name": "openai_gpt-5",
+          "simple_rag_cost": 0.0246,
+          "refrag_cost": 0.0195,
+          "cost_savings": {
+            "absolute": 0.0051,
+            "percentage": 20.73
+          }
+        },
+        {
+          "model_name": "openai/gpt-oss-20b:free",
+          "safe_model_name": "openai_gpt-oss-20b_free",
+          "simple_rag_cost": 0.0159,
+          "refrag_cost": 0.0072,
+          "cost_savings": {
+            "absolute": 0.0087,
+            "percentage": 54.72
+          }
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4",
+          "safe_model_name": "anthropic_claude-sonnet-4",
+          "simple_rag_cost": 0.0183,
+          "refrag_cost": 0.0114,
+          "cost_savings": {
+            "absolute": 0.0069,
+            "percentage": 37.7
+          }
+        },
+        {
+          "model_name": "groq/compound",
+          "safe_model_name": "groq_compound",
+          "simple_rag_cost": 0.0417,
+          "refrag_cost": 0.0227,
+          "cost_savings": {
+            "absolute": 0.019,
+            "percentage": 45.56
+          }
+        },
+        {
+          "model_name": "x-ai/grok-4-fast",
+          "safe_model_name": "x-ai_grok-4-fast",
+          "simple_rag_cost": 0.013,
+          "refrag_cost": 0.0087,
+          "cost_savings": {
+            "absolute": 0.0043,
+            "percentage": 33.08
+          }
+        }
+      ],
+      "cost_summary": {
+        "simple_rag_cost_stats": {
+          "mean": 0.0169,
+          "min": 0.0005,
+          "max": 0.0634,
+          "count": 23
+        },
+        "refrag_cost_stats": {
+          "mean": 0.011,
+          "min": 0.0002,
+          "max": 0.0346,
+          "count": 23
+        },
+        "savings_stats": {
+          "mean": 0.0059,
+          "min": -0.0079,
+          "max": 0.034,
+          "count": 23
+        },
+        "insights": {
+          "average_cost_savings": 0.0059,
+          "models_with_savings": 20
+        }
+      }
+    },
+    "temporal_tracking": {
+      "analysis_timestamp": "2025-10-25T03:32:09.430324",
+      "total_models_analyzed": 23,
+      "individual_model_data": [
+        {
+          "model_name": "google/gemini-2.5-flash-lite",
+          "safe_model_name": "google_gemini-2.5-flash-lite",
+          "timestamp": "2025-10-25_00-39-41",
+          "date": "2025-10-25",
+          "simple_rag": {
+            "latency_avg": 1.4270483255386353,
+            "tokens_avg": 1930.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 0.9109266400337219,
+            "tokens_avg": 806.5,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "qwen/qwen3-235b-a22b:free",
+          "safe_model_name": "qwen_qwen3-235b-a22b_free",
+          "timestamp": "2025-10-18_03-44-53",
+          "date": "2025-10-18",
+          "simple_rag": {
+            "latency_avg": 0.5254636406898499,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 0.23489344120025635,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-4.1-nano",
+          "safe_model_name": "openai_gpt-4.1-nano",
+          "timestamp": "2025-10-17_17-03-27",
+          "date": "2025-10-17",
+          "simple_rag": {
+            "latency_avg": 1.93800288438797,
+            "tokens_avg": 1867.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 1.7890026569366455,
+            "tokens_avg": 795.75,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "gpt-oss:120b-cloud",
+          "safe_model_name": "gpt-oss_120b-cloud",
+          "timestamp": "2025-10-18_15-15-19",
+          "date": "2025-10-18",
+          "simple_rag": {
+            "latency_avg": 3.990111470222473,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 2.7896029949188232,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openrouter/andromeda-alpha",
+          "safe_model_name": "openrouter_andromeda-alpha",
+          "timestamp": "2025-10-23_05-31-28",
+          "date": "2025-10-23",
+          "simple_rag": {
+            "latency_avg": 17.266503930091858,
+            "tokens_avg": 2584.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 11.241332471370697,
+            "tokens_avg": 1160.5,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "moonshotai/kimi-k2-instruct-0905",
+          "safe_model_name": "moonshotai_kimi-k2-instruct-0905",
+          "timestamp": "2025-10-18_02-08-23",
+          "date": "2025-10-18",
+          "simple_rag": {
+            "latency_avg": 0.9179171919822693,
+            "tokens_avg": 1865.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 0.945448637008667,
+            "tokens_avg": 826.75,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-5-mini",
+          "safe_model_name": "openai_gpt-5-mini",
+          "timestamp": "2025-10-25_02-24-32",
+          "date": "2025-10-25",
+          "simple_rag": {
+            "latency_avg": 9.74655544757843,
+            "tokens_avg": 2203.25,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 7.517058193683624,
+            "tokens_avg": 1119.25,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5",
+          "safe_model_name": "anthropic_claude-haiku-4.5",
+          "timestamp": "2025-10-25_02-00-33",
+          "date": "2025-10-25",
+          "simple_rag": {
+            "latency_avg": 6.705035388469696,
+            "tokens_avg": 2224.75,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 2.9810510873794556,
+            "tokens_avg": 1036.75,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "gemini-2.5-pro",
+          "safe_model_name": "gemini-2.5-pro",
+          "timestamp": "2025-10-25_01-17-48",
+          "date": "2025-10-25",
+          "simple_rag": {
+            "latency_avg": 11.827541053295135,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 11.850143015384674,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "mistral-ai/Mistral-Large-2411",
+          "safe_model_name": "mistral-ai_Mistral-Large-2411",
+          "timestamp": "2025-10-18_15-34-35",
+          "date": "2025-10-18",
+          "simple_rag": {
+            "latency_avg": 6.206460058689117,
+            "tokens_avg": 2274.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 4.504072546958923,
+            "tokens_avg": 1032.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5",
+          "safe_model_name": "anthropic_claude-sonnet-4.5",
+          "timestamp": "2025-10-23_18-03-01",
+          "date": "2025-10-23",
+          "simple_rag": {
+            "latency_avg": 9.53811502456665,
+            "tokens_avg": 2201.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 9.67715698480606,
+            "tokens_avg": 1050.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "xai/grok-3-mini",
+          "safe_model_name": "xai_grok-3-mini",
+          "timestamp": "2025-10-18_00-47-46",
+          "date": "2025-10-18",
+          "simple_rag": {
+            "latency_avg": 7.146471440792084,
+            "tokens_avg": 1285.75,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 3.8654195070266724,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-4o-mini",
+          "safe_model_name": "openai_gpt-4o-mini",
+          "timestamp": "2025-10-24_16-42-22",
+          "date": "2025-10-24",
+          "simple_rag": {
+            "latency_avg": 5.512155294418335,
+            "tokens_avg": 1927.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 3.304763972759247,
+            "tokens_avg": 833.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-4.1-mini",
+          "safe_model_name": "openai_gpt-4.1-mini",
+          "timestamp": "2025-10-25_02-22-48",
+          "date": "2025-10-25",
+          "simple_rag": {
+            "latency_avg": 9.349186301231384,
+            "tokens_avg": 1968.25,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 13.141874074935913,
+            "tokens_avg": 850.5,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "glm-4.6:cloud",
+          "safe_model_name": "glm-4.6_cloud",
+          "timestamp": "2025-10-18_14-38-18",
+          "date": "2025-10-18",
+          "simple_rag": {
+            "latency_avg": 63.404376327991486,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 29.413305938243866,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "tngtech/deepseek-r1t2-chimera:free",
+          "safe_model_name": "tngtech_deepseek-r1t2-chimera_free",
+          "timestamp": "2025-10-24_17-38-00",
+          "date": "2025-10-24",
+          "simple_rag": {
+            "latency_avg": 19.38693118095398,
+            "tokens_avg": 2427.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 30.410732686519623,
+            "tokens_avg": 1381.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "gemini-2.5-flash",
+          "safe_model_name": "gemini-2.5-flash",
+          "timestamp": "2025-10-25_00-53-54",
+          "date": "2025-10-25",
+          "simple_rag": {
+            "latency_avg": 5.089482307434082,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 3.6350467205047607,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "x-ai/grok-code-fast-1",
+          "safe_model_name": "x-ai_grok-code-fast-1",
+          "timestamp": "2025-10-24_04-41-11",
+          "date": "2025-10-24",
+          "simple_rag": {
+            "latency_avg": 12.837222695350647,
+            "tokens_avg": 2545.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 8.788155138492584,
+            "tokens_avg": 1395.75,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-5",
+          "safe_model_name": "openai_gpt-5",
+          "timestamp": "2025-10-24_16-55-06",
+          "date": "2025-10-24",
+          "simple_rag": {
+            "latency_avg": 17.44042807817459,
+            "tokens_avg": 2384.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 16.255244255065918,
+            "tokens_avg": 1085.5,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-oss-20b:free",
+          "safe_model_name": "openai_gpt-oss-20b_free",
+          "timestamp": "2025-10-17_03-39-08",
+          "date": "2025-10-17",
+          "simple_rag": {
+            "latency_avg": 9.139609277248383,
+            "tokens_avg": 2263.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 3.8156355023384094,
+            "tokens_avg": 1121.5,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4",
+          "safe_model_name": "anthropic_claude-sonnet-4",
+          "timestamp": "2025-10-23_17-17-32",
+          "date": "2025-10-23",
+          "simple_rag": {
+            "latency_avg": 11.438283503055573,
+            "tokens_avg": 2282.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 8.096949696540833,
+            "tokens_avg": 1114.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "groq/compound",
+          "safe_model_name": "groq_compound",
+          "timestamp": "2025-10-18_03-38-43",
+          "date": "2025-10-18",
+          "simple_rag": {
+            "latency_avg": 10.831991255283356,
+            "tokens_avg": 10291.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 12.916257739067078,
+            "tokens_avg": 3277.75,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "x-ai/grok-4-fast",
+          "safe_model_name": "x-ai_grok-4-fast",
+          "timestamp": "2025-10-23_18-15-42",
+          "date": "2025-10-23",
+          "simple_rag": {
+            "latency_avg": 5.982776582241058,
+            "tokens_avg": 2345.25,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 4.888049304485321,
+            "tokens_avg": 1280.75,
+            "context_chars_avg": 3023.0
+          }
+        }
+      ],
+      "temporal_summary": {
+        "2025-10-25": {
+          "models_count": 6,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 7.36,
+              "min": 1.4270483255386353,
+              "max": 11.827541053295135,
+              "count": 6
+            },
+            "tokens": {
+              "mean": 2081.69,
+              "min": 1930.5,
+              "max": 2224.75,
+              "count": 4
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 6.67,
+              "min": 0.9109266400337219,
+              "max": 13.141874074935913,
+              "count": 6
+            },
+            "tokens": {
+              "mean": 953.25,
+              "min": 806.5,
+              "max": 1119.25,
+              "count": 4
+            }
+          }
+        },
+        "2025-10-18": {
+          "models_count": 7,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 13.29,
+              "min": 0.5254636406898499,
+              "max": 63.404376327991486,
+              "count": 7
+            },
+            "tokens": {
+              "mean": 3929.06,
+              "min": 1285.75,
+              "max": 10291.5,
+              "count": 4
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 7.81,
+              "min": 0.23489344120025635,
+              "max": 29.413305938243866,
+              "count": 7
+            },
+            "tokens": {
+              "mean": 1712.17,
+              "min": 826.75,
+              "max": 3277.75,
+              "count": 3
+            }
+          }
+        },
+        "2025-10-17": {
+          "models_count": 2,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 5.54,
+              "min": 1.93800288438797,
+              "max": 9.139609277248383,
+              "count": 2
+            },
+            "tokens": {
+              "mean": 2065.25,
+              "min": 1867.5,
+              "max": 2263.0,
+              "count": 2
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 2.8,
+              "min": 1.7890026569366455,
+              "max": 3.8156355023384094,
+              "count": 2
+            },
+            "tokens": {
+              "mean": 958.62,
+              "min": 795.75,
+              "max": 1121.5,
+              "count": 2
+            }
+          }
+        },
+        "2025-10-23": {
+          "models_count": 4,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 11.06,
+              "min": 5.982776582241058,
+              "max": 17.266503930091858,
+              "count": 4
+            },
+            "tokens": {
+              "mean": 2353.31,
+              "min": 2201.0,
+              "max": 2584.5,
+              "count": 4
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 8.48,
+              "min": 4.888049304485321,
+              "max": 11.241332471370697,
+              "count": 4
+            },
+            "tokens": {
+              "mean": 1151.31,
+              "min": 1050.0,
+              "max": 1280.75,
+              "count": 4
+            }
+          }
+        },
+        "2025-10-24": {
+          "models_count": 4,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 13.79,
+              "min": 5.512155294418335,
+              "max": 19.38693118095398,
+              "count": 4
+            },
+            "tokens": {
+              "mean": 2320.88,
+              "min": 1927.0,
+              "max": 2545.0,
+              "count": 4
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 14.69,
+              "min": 3.304763972759247,
+              "max": 30.410732686519623,
+              "count": 4
+            },
+            "tokens": {
+              "mean": 1173.81,
+              "min": 833.0,
+              "max": 1395.75,
+              "count": 4
+            }
+          }
+        }
+      }
+    },
+    "statistical_testing": {
+      "analysis_timestamp": "2025-10-25T03:32:09.805890",
+      "total_models_analyzed": 23,
+      "individual_model_data": [
+        {
+          "model_name": "google/gemini-2.5-flash-lite",
+          "safe_model_name": "google_gemini-2.5-flash-lite",
+          "simple_latency": 1.4270483255386353,
+          "refrag_latency": 0.9109266400337219,
+          "simple_tokens": 1930.5,
+          "refrag_tokens": 806.5
+        },
+        {
+          "model_name": "qwen/qwen3-235b-a22b:free",
+          "safe_model_name": "qwen_qwen3-235b-a22b_free",
+          "simple_latency": 0.5254636406898499,
+          "refrag_latency": 0.23489344120025635,
+          "simple_tokens": 0.0,
+          "refrag_tokens": 0.0
+        },
+        {
+          "model_name": "openai/gpt-4.1-nano",
+          "safe_model_name": "openai_gpt-4.1-nano",
+          "simple_latency": 1.93800288438797,
+          "refrag_latency": 1.7890026569366455,
+          "simple_tokens": 1867.5,
+          "refrag_tokens": 795.75
+        },
+        {
+          "model_name": "gpt-oss:120b-cloud",
+          "safe_model_name": "gpt-oss_120b-cloud",
+          "simple_latency": 3.990111470222473,
+          "refrag_latency": 2.7896029949188232,
+          "simple_tokens": 0.0,
+          "refrag_tokens": 0.0
+        },
+        {
+          "model_name": "openrouter/andromeda-alpha",
+          "safe_model_name": "openrouter_andromeda-alpha",
+          "simple_latency": 17.266503930091858,
+          "refrag_latency": 11.241332471370697,
+          "simple_tokens": 2584.5,
+          "refrag_tokens": 1160.5
+        },
+        {
+          "model_name": "moonshotai/kimi-k2-instruct-0905",
+          "safe_model_name": "moonshotai_kimi-k2-instruct-0905",
+          "simple_latency": 0.9179171919822693,
+          "refrag_latency": 0.945448637008667,
+          "simple_tokens": 1865.0,
+          "refrag_tokens": 826.75
+        },
+        {
+          "model_name": "openai/gpt-5-mini",
+          "safe_model_name": "openai_gpt-5-mini",
+          "simple_latency": 9.74655544757843,
+          "refrag_latency": 7.517058193683624,
+          "simple_tokens": 2203.25,
+          "refrag_tokens": 1119.25
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5",
+          "safe_model_name": "anthropic_claude-haiku-4.5",
+          "simple_latency": 6.705035388469696,
+          "refrag_latency": 2.9810510873794556,
+          "simple_tokens": 2224.75,
+          "refrag_tokens": 1036.75
+        },
+        {
+          "model_name": "gemini-2.5-pro",
+          "safe_model_name": "gemini-2.5-pro",
+          "simple_latency": 11.827541053295135,
+          "refrag_latency": 11.850143015384674,
+          "simple_tokens": 0.0,
+          "refrag_tokens": 0.0
+        },
+        {
+          "model_name": "mistral-ai/Mistral-Large-2411",
+          "safe_model_name": "mistral-ai_Mistral-Large-2411",
+          "simple_latency": 6.206460058689117,
+          "refrag_latency": 4.504072546958923,
+          "simple_tokens": 2274.0,
+          "refrag_tokens": 1032.0
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5",
+          "safe_model_name": "anthropic_claude-sonnet-4.5",
+          "simple_latency": 9.53811502456665,
+          "refrag_latency": 9.67715698480606,
+          "simple_tokens": 2201.0,
+          "refrag_tokens": 1050.0
+        },
+        {
+          "model_name": "xai/grok-3-mini",
+          "safe_model_name": "xai_grok-3-mini",
+          "simple_latency": 7.146471440792084,
+          "refrag_latency": 3.8654195070266724,
+          "simple_tokens": 1285.75,
+          "refrag_tokens": 0.0
+        },
+        {
+          "model_name": "openai/gpt-4o-mini",
+          "safe_model_name": "openai_gpt-4o-mini",
+          "simple_latency": 5.512155294418335,
+          "refrag_latency": 3.304763972759247,
+          "simple_tokens": 1927.0,
+          "refrag_tokens": 833.0
+        },
+        {
+          "model_name": "openai/gpt-4.1-mini",
+          "safe_model_name": "openai_gpt-4.1-mini",
+          "simple_latency": 9.349186301231384,
+          "refrag_latency": 13.141874074935913,
+          "simple_tokens": 1968.25,
+          "refrag_tokens": 850.5
+        },
+        {
+          "model_name": "glm-4.6:cloud",
+          "safe_model_name": "glm-4.6_cloud",
+          "simple_latency": 63.404376327991486,
+          "refrag_latency": 29.413305938243866,
+          "simple_tokens": 0.0,
+          "refrag_tokens": 0.0
+        },
+        {
+          "model_name": "tngtech/deepseek-r1t2-chimera:free",
+          "safe_model_name": "tngtech_deepseek-r1t2-chimera_free",
+          "simple_latency": 19.38693118095398,
+          "refrag_latency": 30.410732686519623,
+          "simple_tokens": 2427.0,
+          "refrag_tokens": 1381.0
+        },
+        {
+          "model_name": "gemini-2.5-flash",
+          "safe_model_name": "gemini-2.5-flash",
+          "simple_latency": 5.089482307434082,
+          "refrag_latency": 3.6350467205047607,
+          "simple_tokens": 0.0,
+          "refrag_tokens": 0.0
+        },
+        {
+          "model_name": "x-ai/grok-code-fast-1",
+          "safe_model_name": "x-ai_grok-code-fast-1",
+          "simple_latency": 12.837222695350647,
+          "refrag_latency": 8.788155138492584,
+          "simple_tokens": 2545.0,
+          "refrag_tokens": 1395.75
+        },
+        {
+          "model_name": "openai/gpt-5",
+          "safe_model_name": "openai_gpt-5",
+          "simple_latency": 17.44042807817459,
+          "refrag_latency": 16.255244255065918,
+          "simple_tokens": 2384.5,
+          "refrag_tokens": 1085.5
+        },
+        {
+          "model_name": "openai/gpt-oss-20b:free",
+          "safe_model_name": "openai_gpt-oss-20b_free",
+          "simple_latency": 9.139609277248383,
+          "refrag_latency": 3.8156355023384094,
+          "simple_tokens": 2263.0,
+          "refrag_tokens": 1121.5
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4",
+          "safe_model_name": "anthropic_claude-sonnet-4",
+          "simple_latency": 11.438283503055573,
+          "refrag_latency": 8.096949696540833,
+          "simple_tokens": 2282.5,
+          "refrag_tokens": 1114.0
+        },
+        {
+          "model_name": "groq/compound",
+          "safe_model_name": "groq_compound",
+          "simple_latency": 10.831991255283356,
+          "refrag_latency": 12.916257739067078,
+          "simple_tokens": 10291.5,
+          "refrag_tokens": 3277.75
+        },
+        {
+          "model_name": "x-ai/grok-4-fast",
+          "safe_model_name": "x-ai_grok-4-fast",
+          "simple_latency": 5.982776582241058,
+          "refrag_latency": 4.888049304485321,
+          "simple_tokens": 2345.25,
+          "refrag_tokens": 1280.75
+        }
+      ],
+      "statistical_summary": {
+        "latency_test": {
+          "t_statistic": 0.7604,
+          "mean1": 10.7673,
+          "mean2": 8.3901,
+          "p_value_approx": 0.1
+        },
+        "tokens_test": {
+          "t_statistic": 2.9999,
+          "mean1": 2681.4412,
+          "mean2": 1186.3088,
+          "p_value_approx": 0.05
+        },
+        "sample_sizes": {
+          "latency": {
+            "simple": 23,
+            "refrag": 23
+          },
+          "tokens": {
+            "simple": 17,
+            "refrag": 17
+          }
+        }
+      }
+    },
+    "model_categorization": {
+      "analysis_timestamp": "2025-10-25T03:32:10.155965",
+      "total_models_analyzed": 23,
+      "individual_model_data": [
+        {
+          "model_name": "google/gemini-2.5-flash-lite",
+          "safe_model_name": "google_gemini-2.5-flash-lite",
+          "provider": "google",
+          "simple_rag": {
+            "latency_avg": 1.4270483255386353,
+            "tokens_avg": 1930.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 0.9109266400337219,
+            "tokens_avg": 806.5,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "qwen/qwen3-235b-a22b:free",
+          "safe_model_name": "qwen_qwen3-235b-a22b_free",
+          "provider": "qwen",
+          "simple_rag": {
+            "latency_avg": 0.5254636406898499,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 0.23489344120025635,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-4.1-nano",
+          "safe_model_name": "openai_gpt-4.1-nano",
+          "provider": "openai",
+          "simple_rag": {
+            "latency_avg": 1.93800288438797,
+            "tokens_avg": 1867.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 1.7890026569366455,
+            "tokens_avg": 795.75,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "gpt-oss:120b-cloud",
+          "safe_model_name": "gpt-oss_120b-cloud",
+          "provider": "unknown",
+          "simple_rag": {
+            "latency_avg": 3.990111470222473,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 2.7896029949188232,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openrouter/andromeda-alpha",
+          "safe_model_name": "openrouter_andromeda-alpha",
+          "provider": "openrouter",
+          "simple_rag": {
+            "latency_avg": 17.266503930091858,
+            "tokens_avg": 2584.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 11.241332471370697,
+            "tokens_avg": 1160.5,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "moonshotai/kimi-k2-instruct-0905",
+          "safe_model_name": "moonshotai_kimi-k2-instruct-0905",
+          "provider": "moonshotai",
+          "simple_rag": {
+            "latency_avg": 0.9179171919822693,
+            "tokens_avg": 1865.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 0.945448637008667,
+            "tokens_avg": 826.75,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-5-mini",
+          "safe_model_name": "openai_gpt-5-mini",
+          "provider": "openai",
+          "simple_rag": {
+            "latency_avg": 9.74655544757843,
+            "tokens_avg": 2203.25,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 7.517058193683624,
+            "tokens_avg": 1119.25,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5",
+          "safe_model_name": "anthropic_claude-haiku-4.5",
+          "provider": "anthropic",
+          "simple_rag": {
+            "latency_avg": 6.705035388469696,
+            "tokens_avg": 2224.75,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 2.9810510873794556,
+            "tokens_avg": 1036.75,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "gemini-2.5-pro",
+          "safe_model_name": "gemini-2.5-pro",
+          "provider": "unknown",
+          "simple_rag": {
+            "latency_avg": 11.827541053295135,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 11.850143015384674,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "mistral-ai/Mistral-Large-2411",
+          "safe_model_name": "mistral-ai_Mistral-Large-2411",
+          "provider": "mistral-ai",
+          "simple_rag": {
+            "latency_avg": 6.206460058689117,
+            "tokens_avg": 2274.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 4.504072546958923,
+            "tokens_avg": 1032.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5",
+          "safe_model_name": "anthropic_claude-sonnet-4.5",
+          "provider": "anthropic",
+          "simple_rag": {
+            "latency_avg": 9.53811502456665,
+            "tokens_avg": 2201.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 9.67715698480606,
+            "tokens_avg": 1050.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "xai/grok-3-mini",
+          "safe_model_name": "xai_grok-3-mini",
+          "provider": "xai",
+          "simple_rag": {
+            "latency_avg": 7.146471440792084,
+            "tokens_avg": 1285.75,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 3.8654195070266724,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-4o-mini",
+          "safe_model_name": "openai_gpt-4o-mini",
+          "provider": "openai",
+          "simple_rag": {
+            "latency_avg": 5.512155294418335,
+            "tokens_avg": 1927.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 3.304763972759247,
+            "tokens_avg": 833.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-4.1-mini",
+          "safe_model_name": "openai_gpt-4.1-mini",
+          "provider": "openai",
+          "simple_rag": {
+            "latency_avg": 9.349186301231384,
+            "tokens_avg": 1968.25,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 13.141874074935913,
+            "tokens_avg": 850.5,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "glm-4.6:cloud",
+          "safe_model_name": "glm-4.6_cloud",
+          "provider": "unknown",
+          "simple_rag": {
+            "latency_avg": 63.404376327991486,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 29.413305938243866,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "tngtech/deepseek-r1t2-chimera:free",
+          "safe_model_name": "tngtech_deepseek-r1t2-chimera_free",
+          "provider": "tngtech",
+          "simple_rag": {
+            "latency_avg": 19.38693118095398,
+            "tokens_avg": 2427.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 30.410732686519623,
+            "tokens_avg": 1381.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "gemini-2.5-flash",
+          "safe_model_name": "gemini-2.5-flash",
+          "provider": "unknown",
+          "simple_rag": {
+            "latency_avg": 5.089482307434082,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 3.6350467205047607,
+            "tokens_avg": 0.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "x-ai/grok-code-fast-1",
+          "safe_model_name": "x-ai_grok-code-fast-1",
+          "provider": "x-ai",
+          "simple_rag": {
+            "latency_avg": 12.837222695350647,
+            "tokens_avg": 2545.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 8.788155138492584,
+            "tokens_avg": 1395.75,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-5",
+          "safe_model_name": "openai_gpt-5",
+          "provider": "openai",
+          "simple_rag": {
+            "latency_avg": 17.44042807817459,
+            "tokens_avg": 2384.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 16.255244255065918,
+            "tokens_avg": 1085.5,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "openai/gpt-oss-20b:free",
+          "safe_model_name": "openai_gpt-oss-20b_free",
+          "provider": "openai",
+          "simple_rag": {
+            "latency_avg": 9.139609277248383,
+            "tokens_avg": 2263.0,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 3.8156355023384094,
+            "tokens_avg": 1121.5,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4",
+          "safe_model_name": "anthropic_claude-sonnet-4",
+          "provider": "anthropic",
+          "simple_rag": {
+            "latency_avg": 11.438283503055573,
+            "tokens_avg": 2282.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 8.096949696540833,
+            "tokens_avg": 1114.0,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "groq/compound",
+          "safe_model_name": "groq_compound",
+          "provider": "groq",
+          "simple_rag": {
+            "latency_avg": 10.831991255283356,
+            "tokens_avg": 10291.5,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 12.916257739067078,
+            "tokens_avg": 3277.75,
+            "context_chars_avg": 3023.0
+          }
+        },
+        {
+          "model_name": "x-ai/grok-4-fast",
+          "safe_model_name": "x-ai_grok-4-fast",
+          "provider": "x-ai",
+          "simple_rag": {
+            "latency_avg": 5.982776582241058,
+            "tokens_avg": 2345.25,
+            "context_chars_avg": 7503.0
+          },
+          "refrag": {
+            "latency_avg": 4.888049304485321,
+            "tokens_avg": 1280.75,
+            "context_chars_avg": 3023.0
+          }
+        }
+      ],
+      "categorization_summary": {
+        "google": {
+          "models_count": 1,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 1.43,
+              "min": 1.4270483255386353,
+              "max": 1.4270483255386353,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 1930.5,
+              "min": 1930.5,
+              "max": 1930.5,
+              "count": 1
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 0.91,
+              "min": 0.9109266400337219,
+              "max": 0.9109266400337219,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 806.5,
+              "min": 806.5,
+              "max": 806.5,
+              "count": 1
+            }
+          }
+        },
+        "qwen": {
+          "models_count": 1,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 0.53,
+              "min": 0.5254636406898499,
+              "max": 0.5254636406898499,
+              "count": 1
+            },
+            "tokens": {}
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 0.23,
+              "min": 0.23489344120025635,
+              "max": 0.23489344120025635,
+              "count": 1
+            },
+            "tokens": {}
+          }
+        },
+        "openai": {
+          "models_count": 6,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 8.85,
+              "min": 1.93800288438797,
+              "max": 17.44042807817459,
+              "count": 6
+            },
+            "tokens": {
+              "mean": 2102.25,
+              "min": 1867.5,
+              "max": 2384.5,
+              "count": 6
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 7.64,
+              "min": 1.7890026569366455,
+              "max": 16.255244255065918,
+              "count": 6
+            },
+            "tokens": {
+              "mean": 967.58,
+              "min": 795.75,
+              "max": 1121.5,
+              "count": 6
+            }
+          }
+        },
+        "unknown": {
+          "models_count": 4,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 21.08,
+              "min": 3.990111470222473,
+              "max": 63.404376327991486,
+              "count": 4
+            },
+            "tokens": {}
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 11.92,
+              "min": 2.7896029949188232,
+              "max": 29.413305938243866,
+              "count": 4
+            },
+            "tokens": {}
+          }
+        },
+        "openrouter": {
+          "models_count": 1,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 17.27,
+              "min": 17.266503930091858,
+              "max": 17.266503930091858,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 2584.5,
+              "min": 2584.5,
+              "max": 2584.5,
+              "count": 1
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 11.24,
+              "min": 11.241332471370697,
+              "max": 11.241332471370697,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 1160.5,
+              "min": 1160.5,
+              "max": 1160.5,
+              "count": 1
+            }
+          }
+        },
+        "moonshotai": {
+          "models_count": 1,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 0.92,
+              "min": 0.9179171919822693,
+              "max": 0.9179171919822693,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 1865.0,
+              "min": 1865.0,
+              "max": 1865.0,
+              "count": 1
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 0.95,
+              "min": 0.945448637008667,
+              "max": 0.945448637008667,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 826.75,
+              "min": 826.75,
+              "max": 826.75,
+              "count": 1
+            }
+          }
+        },
+        "anthropic": {
+          "models_count": 3,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 9.23,
+              "min": 6.705035388469696,
+              "max": 11.438283503055573,
+              "count": 3
+            },
+            "tokens": {
+              "mean": 2236.08,
+              "min": 2201.0,
+              "max": 2282.5,
+              "count": 3
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 6.92,
+              "min": 2.9810510873794556,
+              "max": 9.67715698480606,
+              "count": 3
+            },
+            "tokens": {
+              "mean": 1066.92,
+              "min": 1036.75,
+              "max": 1114.0,
+              "count": 3
+            }
+          }
+        },
+        "mistral-ai": {
+          "models_count": 1,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 6.21,
+              "min": 6.206460058689117,
+              "max": 6.206460058689117,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 2274.0,
+              "min": 2274.0,
+              "max": 2274.0,
+              "count": 1
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 4.5,
+              "min": 4.504072546958923,
+              "max": 4.504072546958923,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 1032.0,
+              "min": 1032.0,
+              "max": 1032.0,
+              "count": 1
+            }
+          }
+        },
+        "xai": {
+          "models_count": 1,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 7.15,
+              "min": 7.146471440792084,
+              "max": 7.146471440792084,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 1285.75,
+              "min": 1285.75,
+              "max": 1285.75,
+              "count": 1
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 3.87,
+              "min": 3.8654195070266724,
+              "max": 3.8654195070266724,
+              "count": 1
+            },
+            "tokens": {}
+          }
+        },
+        "tngtech": {
+          "models_count": 1,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 19.39,
+              "min": 19.38693118095398,
+              "max": 19.38693118095398,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 2427.0,
+              "min": 2427.0,
+              "max": 2427.0,
+              "count": 1
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 30.41,
+              "min": 30.410732686519623,
+              "max": 30.410732686519623,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 1381.0,
+              "min": 1381.0,
+              "max": 1381.0,
+              "count": 1
+            }
+          }
+        },
+        "x-ai": {
+          "models_count": 2,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 9.41,
+              "min": 5.982776582241058,
+              "max": 12.837222695350647,
+              "count": 2
+            },
+            "tokens": {
+              "mean": 2445.12,
+              "min": 2345.25,
+              "max": 2545.0,
+              "count": 2
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 6.84,
+              "min": 4.888049304485321,
+              "max": 8.788155138492584,
+              "count": 2
+            },
+            "tokens": {
+              "mean": 1338.25,
+              "min": 1280.75,
+              "max": 1395.75,
+              "count": 2
+            }
+          }
+        },
+        "groq": {
+          "models_count": 1,
+          "simple_rag_stats": {
+            "latency": {
+              "mean": 10.83,
+              "min": 10.831991255283356,
+              "max": 10.831991255283356,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 10291.5,
+              "min": 10291.5,
+              "max": 10291.5,
+              "count": 1
+            }
+          },
+          "refrag_stats": {
+            "latency": {
+              "mean": 12.92,
+              "min": 12.916257739067078,
+              "max": 12.916257739067078,
+              "count": 1
+            },
+            "tokens": {
+              "mean": 3277.75,
+              "min": 3277.75,
+              "max": 3277.75,
+              "count": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
