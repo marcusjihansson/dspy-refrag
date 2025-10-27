@@ -198,41 +198,118 @@ The "Second Summer of Vector Databases" may bring:
 
 ## Getting Started
 
-### Conceptual Implementation
+### Implementation [refrag.py](https://github.com/marcusjihansson/dspy-refrag/blob/main/src/dspy_refrag/refrag.py)
 
 ```python
-import dspy
 
-class REFRAG(dspy.Module):
-    def __init__(self, vector_db, refrag_model):
-        self.vector_db = vector_db
-        self.model = refrag_model
+class REFRAGContext:
+    # Context class for REFRAG results
+    def __init__(
+        self,
+        query: str,
+        chunk_vectors: Optional[List[List[float]]] = None,
+        chunk_metadata: Optional[List[dict]] = None,
+        answer: Optional[str] = None,
+    ):
+        self.query = query
+        self.chunk_vectors = chunk_vectors
+        self.chunk_metadata = chunk_metadata
+        self.answer = answer
 
-    def forward(self, query):
-        # Retrieve vectors (not text!)
-        results = self.vector_db.search(
-            query=query,
-            return_vectors=True,
-            k=5
+
+class REFRAGModule(ModuleBase):
+    def __init__(
+        self,
+        retriever: Optional[SimpleRetriever] = None,
+        lm: Optional[Any] = None,
+        sensor: Optional[Sensor] = None,
+        k: int = 5,
+        budget: int = 2,
+        lm_model: str = "gpt-3.5-turbo",
+        api_key: Optional[str] = None,
+        **kwargs,
+    ):
+        super().__init__(**kwargs)
+        self.retriever = retriever or SimpleRetriever()
+        self.sensor = sensor or Sensor()
+        self.k = k
+        self.budget = budget
+        self.serializer = VectorAwareSerializer()
+
+        # Configure OpenRouter if available
+        openrouter_model = maybe_configure_openrouter_env()
+        if openrouter_model:
+            lm_model = openrouter_model
+
+        # Initialize LM with dspy.LM if no custom lm provided
+        if lm is None:
+            # Securely get API key from environment if not provided
+            key = api_key or os.getenv("OPENAI_API_KEY")
+            if key:
+                self.lm = LMBase(model=lm_model, api_key=key)
+            else:
+                self.lm = None  # No LM if no key
+        else:
+            self.lm = lm
+
+    def forward(self, query: str) -> REFRAGContext:
+        # 1) retrieve
+        passages = self.retriever.retrieve(query, k=self.k)
+        vectors = [p.vector.tolist() for p in passages]
+        metadata = [p.metadata for p in passages]
+
+        # 2) decide expansion
+        qv = self.retriever.embed_query(query)
+        selected_idxs = self.sensor.select(
+            qv, [np.asarray(v) for v in vectors], budget=self.budget
         )
 
-        # Extract vectors and metadata
-        vectors = [r.vector for r in results]
-        metadata = [r.metadata for r in results]
+        # 3) attach selection info
+        metadata_with_selection = []
+        for i, m in enumerate(metadata):
+            meta = dict(m)
+            meta.setdefault("selected", i in selected_idxs)
+            metadata_with_selection.append(meta)
 
-        # Generate with vector context
-        return self.model.generate(
+        # 4) Call LM if available, else return context without answer
+        if self.lm is None:
+            return REFRAGContext(
+                query=query,
+                chunk_vectors=vectors,
+                chunk_metadata=metadata_with_selection,
+                answer=None,
+            )
+
+        # Build prompt including context from vectors and metadata
+        context_str = "\n".join(
+            [
+                f"Passage {i}: {p['text']} (selected: {p.get('selected', False)})"
+                for i, p in enumerate(metadata_with_selection)
+            ]
+        )
+        prompt = f"Use the following context to answer the query.\n\nContext:\n{context_str}\n\nQuery: {query}\n\nAnswer:"
+
+        try:
+            # Call LM with prompt (dspy.LM style)
+            resp = self.lm(prompt)
+            # Assume resp is a string or has .text attribute
+            answer = resp if isinstance(resp, str) else getattr(resp, "text", str(resp))
+        except Exception as e:
+            # Handle LM failures gracefully
+            answer = f"Error calling LM: {str(e)}"
+
+        return REFRAGContext(
             query=query,
-            context_vectors=vectors,
-            context_metadata=metadata
+            chunk_vectors=vectors,
+            chunk_metadata=metadata_with_selection,
+            answer=answer,
         )
 ```
 
 ### Requirements
 
-1. REFRAG-trained language model
-2. Vector database with vector retrieval support
-3. Orchestration framework supporting vector contexts (e.g., extended DSPy)
+1. Vector database with vector retrieval support
+2. Orchestration framework supporting vector contexts (e.g., extended DSPy)
 
 ## Conclusion
 
