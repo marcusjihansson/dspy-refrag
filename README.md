@@ -7,6 +7,10 @@
 [![DSPy Compatible](https://img.shields.io/badge/DSPy-3.0.3%2B-orange.svg)](https://github.com/stanfordnlp/dspy)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+## What is REFRAG: 
+
+- For additional information about REFRAG, please take a look here: [See documentation](./dspy-refrag/refrag.md)
+
 ## Enterprise Features
 
 ### **Core REFRAG Implementation**
@@ -477,12 +481,15 @@ Built on the [DSPy](https://github.com/stanfordnlp/dspy) framework. Special than
 
 I am open to work. Let's work together. I am ready to start working as soon as possible!!
 
-Twitter/X: https://x.com/marcusjihansson
-LinkedIn: https://www.linkedin.com/in/marcus-frid-johansson/
+**Send me a message on either:** 
+
+Twitter/X: [Visit Twitter/X](https://x.com/marcusjihansson) 
+
+LinkedIn: [Visit LinkedIn](https://www.linkedin.com/in/marcus-frid-johansson/) 
 
 ## Additional projects:
 
 Please take a look at my Github for my additional skills.
 Coding languages: Python, Go, C++, SQL
 
-https://github.com/marcusjihansson
+[Visit GitHub](https://github.com/marcusjihansson) 
